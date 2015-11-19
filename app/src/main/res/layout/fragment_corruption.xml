@@ -1,12 +1,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.eti.nucleus.app10medidas.activity.Corruption"
     android:background="@color/material_drawer_background"
     android:orientation="vertical"
     >
 
-    <include layout="@layout/toolbar_layout"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corrupção"
+        />
 
 </LinearLayout>

@@ -1,12 +1,15 @@
 package com.eti.nucleus.app10medidas.modules;
 
 import android.content.Intent;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import com.eti.nucleus.app10medidas.activity.Corruption;
+
 import com.eti.nucleus.app10medidas.activity.MainActivity;
 import com.eti.nucleus.app10medidas.R;
+import com.eti.nucleus.app10medidas.fragments.Corruption;
+import com.eti.nucleus.app10medidas.fragments.TenMeasures;
 import com.mikepenz.materialdrawer.AccountHeader;
 import com.mikepenz.materialdrawer.AccountHeaderBuilder;
 import com.mikepenz.materialdrawer.Drawer;
@@ -16,7 +19,6 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.util.RecyclerViewCacheUtil;
 
 public class DrawerNavigator{
-
 
     private AppCompatActivity activity;
     private Toolbar myToolbar;
@@ -52,17 +54,15 @@ public class DrawerNavigator{
                     @Override
                     public boolean onItemClick(View view, int i, IDrawerItem iDrawerItem) {
 
-                        Intent intent = null;
+                        Fragment f = null;
 
                         if (iDrawerItem != null) {
                             switch (iDrawerItem.getIdentifier()) {
                                 case 1:
-                                    if(!activity.getClass().equals(MainActivity.class))
-                                        intent = new Intent(activity, MainActivity.class);
+                                    f = new TenMeasures();
                                     break;
                                 case 2:
-                                    if(!activity.getClass().equals(Corruption.class))
-                                        intent = new Intent(activity, Corruption.class);
+                                    f = new Corruption();
                                     break;
                                 case 3:
                                     break;
@@ -75,9 +75,8 @@ public class DrawerNavigator{
                             }
                         }
 
-                        if (intent != null) {
-                           activity.startActivity(intent);
-                        }
+                        if(f!=null)
+                            activity.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, f).commit();
 
                         return false;
                     }
