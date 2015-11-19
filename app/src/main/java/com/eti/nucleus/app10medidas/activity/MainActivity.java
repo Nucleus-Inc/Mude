@@ -1,18 +1,20 @@
 package com.eti.nucleus.app10medidas.activity;
 
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.eti.nucleus.app10medidas.R;
+import com.eti.nucleus.app10medidas.fragments.TenMeasures;
 import com.eti.nucleus.app10medidas.modules.DrawerNavigator;
 import com.eti.nucleus.app10medidas.modules.MyToolbar;
 import com.mikepenz.materialdrawer.Drawer;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Toolbar myToolbar;
+    public static Toolbar myToolbar;
     public Drawer result;
 
     private void start_toolbar() {
@@ -25,10 +27,18 @@ public class MainActivity extends AppCompatActivity {
         result = drawerNavigator.createDrawerNavigator();
     }
 
+    private void start_fragment(Bundle savedInstanceState){
+        if(savedInstanceState==null){
+            Fragment f = new TenMeasures();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, f).commit();
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        start_fragment(savedInstanceState);
         start_toolbar();
         start_navigator_drawer();
     }

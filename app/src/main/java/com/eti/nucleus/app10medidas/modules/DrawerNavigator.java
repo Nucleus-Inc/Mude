@@ -60,9 +60,11 @@ public class DrawerNavigator{
                             switch (iDrawerItem.getIdentifier()) {
                                 case 1:
                                     f = new TenMeasures();
+                                    myToolbar.setTitle("10 Medidas");
                                     break;
                                 case 2:
                                     f = new Corruption();
+                                    myToolbar.setTitle("Corrupção");
                                     break;
                                 case 3:
                                     break;
