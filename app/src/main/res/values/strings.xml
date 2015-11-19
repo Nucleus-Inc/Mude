@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">App10medidas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tenMeasures">10 Medidas</string>
+    <string name="corruption">Corrupção</string>
+    <string name="download">Downloads</string>
+    <string name="multimedia">Multimídia</string>
+    <string name="news">Notícias</string>
+    <string name="about">Sobre</string>
+    <string name="title_activity_corruption">Corruption</string>
+</resources>

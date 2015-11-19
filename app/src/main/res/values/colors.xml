@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_drawer_primary">#112E7A</color>
+    <color name="material_drawer_primary_dark">#0E255F</color>
+    <color name="material_drawer_accent_dark">#FF6600</color>
+    <color name="material_drawer_accent_light">#C89D3E</color>
+    <color name="material_drawer_background">#E2E0E1</color>
+    <color name="material_drawer_primary_text">#212121</color>
+    <color name="material_drawer_primary_icon">#C89D3E</color>
+    <color name="material_drawer_dark_primary_icon">#FF6600</color>
+    <color name="text_color">#F0E4E0</color>
+</resources>
