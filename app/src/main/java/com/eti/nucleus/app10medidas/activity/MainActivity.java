@@ -1,5 +1,6 @@
 package com.eti.nucleus.app10medidas.activity;
 
+import android.os.PersistableBundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
     public static Toolbar myToolbar;
     public Drawer result;
 
-    private void start_toolbar() {
-        MyToolbar toolbar = new MyToolbar(MainActivity.this,R.string.tenMeasures);
+    private void start_toolbar(int title) {
+        MyToolbar toolbar = new MyToolbar(MainActivity.this,title);
         myToolbar =  toolbar.createToolbar();
     }
 
@@ -27,19 +28,19 @@ public class MainActivity extends AppCompatActivity {
         result = drawerNavigator.createDrawerNavigator();
     }
 
-    private void start_fragment(Bundle savedInstanceState){
-        if(savedInstanceState==null){
-            Fragment f = new TenMeasures();
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, f).commit();
-        }
+    private void start_fragment(){
+        Fragment f = new TenMeasures();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, f).commit();
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        start_fragment(savedInstanceState);
-        start_toolbar();
+        if(savedInstanceState==null) {
+            start_fragment();
+        }
+        start_toolbar(R.string.tenMeasures);
         start_navigator_drawer();
     }
 
@@ -54,4 +55,11 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+
+        super.onSaveInstanceState(outState, outPersistentState);
+    }
+
 }

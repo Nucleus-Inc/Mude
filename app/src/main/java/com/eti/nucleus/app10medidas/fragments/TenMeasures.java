@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.eti.nucleus.app10medidas.R;
+import com.eti.nucleus.app10medidas.activity.MainActivity;
 
 public class TenMeasures extends Fragment {
 
@@ -14,5 +15,11 @@ public class TenMeasures extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_ten_measures,container,false);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        MainActivity.myToolbar.setTitle(R.string.tenMeasures);
     }
 }

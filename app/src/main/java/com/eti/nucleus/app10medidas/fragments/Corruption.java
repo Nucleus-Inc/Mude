@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.eti.nucleus.app10medidas.R;
+import com.eti.nucleus.app10medidas.activity.MainActivity;
 
 public class Corruption extends Fragment {
 
@@ -17,4 +18,9 @@ public class Corruption extends Fragment {
         return inflater.inflate(R.layout.fragment_corruption,container,false);
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        MainActivity.myToolbar.setTitle(R.string.corruption);
+    }
 }

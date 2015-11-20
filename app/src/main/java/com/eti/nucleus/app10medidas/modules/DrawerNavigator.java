@@ -1,12 +1,9 @@
 package com.eti.nucleus.app10medidas.modules;
 
-import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-
-import com.eti.nucleus.app10medidas.activity.MainActivity;
 import com.eti.nucleus.app10medidas.R;
 import com.eti.nucleus.app10medidas.fragments.Corruption;
 import com.eti.nucleus.app10medidas.fragments.TenMeasures;
@@ -21,7 +18,8 @@ import com.mikepenz.materialdrawer.util.RecyclerViewCacheUtil;
 public class DrawerNavigator{
 
     private AppCompatActivity activity;
-    private Toolbar myToolbar;
+    public Toolbar myToolbar;
+    public static int selected_item;
 
     public DrawerNavigator(AppCompatActivity activity,Toolbar myToolbar) {
         this.activity = activity;
@@ -60,11 +58,13 @@ public class DrawerNavigator{
                             switch (iDrawerItem.getIdentifier()) {
                                 case 1:
                                     f = new TenMeasures();
-                                    myToolbar.setTitle("10 Medidas");
+                                    //myToolbar.setTitle("10 Medidas");
+                                    selected_item = 1;
                                     break;
                                 case 2:
                                     f = new Corruption();
-                                    myToolbar.setTitle("Corrupção");
+                                    //myToolbar.setTitle("Corrupção");
+                                    selected_item = 2;
                                     break;
                                 case 3:
                                     break;
