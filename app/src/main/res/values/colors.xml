@@ -9,4 +9,5 @@
     <color name="material_drawer_primary_icon">#C89D3E</color>
     <color name="material_drawer_dark_primary_icon">#FF6600</color>
     <color name="text_color">#F0E4E0</color>
+    <color name="button_focused_primary">#5269A3</color>
 </resources>
