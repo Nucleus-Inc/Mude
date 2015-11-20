@@ -114,7 +114,7 @@
                         android:layout_height="wrap_content"
                         android:text="Participe"
                         android:layout_below="@+id/ten_measure_know_more"
-                        android:background="@drawable/participate_border_button"
+                        android:background="@drawable/participate_selector_button"
                         android:textColor="@color/md_white_1000"
                         android:layout_margin="4dp"
                         />
