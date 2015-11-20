@@ -5,7 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import com.eti.nucleus.app10medidas.R;
+import com.eti.nucleus.app10medidas.fragments.About;
 import com.eti.nucleus.app10medidas.fragments.Corruption;
+import com.eti.nucleus.app10medidas.fragments.Downloads;
+import com.eti.nucleus.app10medidas.fragments.Multimedia;
+import com.eti.nucleus.app10medidas.fragments.News;
 import com.eti.nucleus.app10medidas.fragments.TenMeasures;
 import com.mikepenz.materialdrawer.AccountHeader;
 import com.mikepenz.materialdrawer.AccountHeaderBuilder;
@@ -19,7 +23,6 @@ public class DrawerNavigator{
 
     private AppCompatActivity activity;
     public Toolbar myToolbar;
-    public static int selected_item;
 
     public DrawerNavigator(AppCompatActivity activity,Toolbar myToolbar) {
         this.activity = activity;
@@ -58,21 +61,21 @@ public class DrawerNavigator{
                             switch (iDrawerItem.getIdentifier()) {
                                 case 1:
                                     f = new TenMeasures();
-                                    //myToolbar.setTitle("10 Medidas");
-                                    selected_item = 1;
                                     break;
                                 case 2:
                                     f = new Corruption();
-                                    //myToolbar.setTitle("Corrupção");
-                                    selected_item = 2;
                                     break;
                                 case 3:
+                                    f = new Downloads();
                                     break;
                                 case 4:
+                                    f = new Multimedia();
                                     break;
                                 case 5:
+                                    f = new News();
                                     break;
                                 case 6:
+                                    f = new About();
                                     break;
                             }
                         }
