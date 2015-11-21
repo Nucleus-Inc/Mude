@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/start_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            cardview:cardElevation="4dp"
+            cardview:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            android:background="@color/card_background"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/ten_measure_title"
+                    android:text="@string/ten_measure_title_card"
+                    android:textSize="16sp"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ten_measure_subtitle"
+                    android:text="@string/ten_measure_subtitle_card"
+                    android:textSize="14sp"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/ten_measure_title"
+                    />
+
+                <TextView
+                    android:id="@+id/ten_measure_number_subscriptions"
+                    android:text="@string/number_subscriptions"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/material_drawer_accent_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="60dp"
+                    android:paddingBottom="60dp"
+                    android:layout_below="@+id/ten_measure_subtitle"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/my_card_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            cardview:cardElevation="4dp"
+            cardview:cardCornerRadius="5dp"
+            android:layout_below="@+id/start_card"
+            android:background="@color/card_background"
+            android:layout_margin="5dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/ten_measure_title_2"
+                    android:text="@string/ten_measure_title_card_2"
+                    android:textSize="16sp"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/ten_measure_subtitle_2"
+                    android:text="@string/ten_measure_subtitle_card_2"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:layout_below="@+id/ten_measure_title_2"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/ten_measure_know_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ten_measure_subtitle_2"
+                    android:text="Saiba Mais"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/know_more_selector_button"
+                    android:textColor="@color/md_white_1000"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/ten_measure_participate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Participe"
+                    android:layout_below="@+id/ten_measure_know_more"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/participate_selector_button"
+                    android:textColor="@color/md_white_1000"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>
