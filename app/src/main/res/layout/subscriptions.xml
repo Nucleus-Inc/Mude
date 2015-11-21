@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ten_measure_title"
+        android:text="@string/ten_measure_title_card"
+        android:textSize="30sp"
+        android:textColor="@color/material_drawer_primary_dark"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/ten_measure_subtitle"
+        android:text="@string/ten_measure_subtitle_card"
+        android:textSize="14sp"
+        android:textColor="@color/material_drawer_primary_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ten_measure_title"
+        />
+    <TextView
+        android:id="@+id/ten_measure_number_subscriptions"
+        android:text="@string/number_subscriptions"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/material_drawer_accent_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ten_measure_subtitle"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ten_measure_title_2"
+        android:text="@string/ten_measure_title_card_2"
+        android:textSize="30sp"
+        android:textColor="@color/material_drawer_primary_dark"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ten_measure_title_2"
+        android:layout_above="@+id/ten_measure_know_more"
+        android:fillViewport="true"
+        >
+        <TextView
+            android:id="@+id/ten_measure_subtitle_2"
+            android:text="@string/ten_measure_subtitle_card_2"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/material_drawer_primary_dark"
+            />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ten_measure_know_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saiba Mais"
+        android:layout_above="@+id/ten_measure_participate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/know_more_selector_button"
+        android:textColor="@color/md_white_1000"
+        />
+
+    <Button
+        android:id="@+id/ten_measure_participate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Participe"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/participate_selector_button"
+        android:textColor="@color/md_white_1000"
+        />
+
+</RelativeLayout>
