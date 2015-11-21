@@ -1,5 +1,6 @@
 package com.eti.nucleus.app10medidas.fragments;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 import com.eti.nucleus.app10medidas.R;
 import com.eti.nucleus.app10medidas.activity.MainActivity;
 
-public class TenMeasures extends Fragment {
+public class TenMeasures extends Fragment implements View.OnClickListener{
 
     public Button participate;
     public Button know_more;
@@ -23,12 +24,15 @@ public class TenMeasures extends Fragment {
         return inflater.inflate(R.layout.fragment_ten_measures,container,false);
     }
 
-    /*private void listen_buttons(){
+    private void listen_buttons(){
         participate = (Button) getActivity().findViewById(R.id.ten_measure_participate);
-        participate.setOnClickListener(this);
-        know_more = (Button) getActivity().findViewById(R.id.ten_measure_know_more);
-        know_more.setOnClickListener(this);
-    }*/
+        if(participate!=null) {
+            participate.setOnClickListener(this);
+            know_more = (Button) getActivity().findViewById(R.id.ten_measure_know_more);
+            if(know_more!=null)
+                know_more.setOnClickListener(this);
+        }
+    }
 
     private void set_title(){
         MainActivity.myToolbar.setTitle(R.string.tenMeasures);
@@ -38,10 +42,10 @@ public class TenMeasures extends Fragment {
     public void onResume() {
         super.onResume();
         set_title();
-        //listen_buttons();
+        listen_buttons();
     }
 
-    /*@Override
+    @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.ten_measure_know_more:
@@ -51,5 +55,5 @@ public class TenMeasures extends Fragment {
                 Toast.makeText(getActivity(),"PARTICIPE",Toast.LENGTH_SHORT).show();
                 break;
         }
-    }*/
+    }
 }
