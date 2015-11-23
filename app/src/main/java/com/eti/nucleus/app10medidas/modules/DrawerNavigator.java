@@ -44,12 +44,12 @@ public class DrawerNavigator{
                 .withTranslucentStatusBar(false)
                 .withHasStableIds(true)
                 .addDrawerItems(
-                        new SecondaryDrawerItem().withName(R.string.tenMeasures).withIcon(R.mipmap.ic_action_done).withIdentifier(1).withSelectable(false),
-                        new SecondaryDrawerItem().withName(R.string.corruption).withIcon(R.mipmap.ic_notifications_off).withIdentifier(2).withSelectable(false),
-                        new SecondaryDrawerItem().withName(R.string.download).withIcon(R.mipmap.ic_file_download).withIdentifier(3).withSelectable(false),
-                        new SecondaryDrawerItem().withName(R.string.multimedia).withIcon(R.mipmap.ic_perm_media).withIdentifier(4).withSelectable(false),
-                        new SecondaryDrawerItem().withName(R.string.news).withIcon(R.mipmap.ic_today).withIdentifier(5).withSelectable(false),
-                        new SecondaryDrawerItem().withName(R.string.about).withIcon(R.mipmap.ic_info_outline).withIdentifier(6).withSelectable(false)
+                        new SecondaryDrawerItem().withName(R.string.tenMeasures).withIcon(R.mipmap.idea).withIdentifier(1).withSelectable(false),
+                        new SecondaryDrawerItem().withName(R.string.corruption).withIcon(R.mipmap.fraud).withIdentifier(2).withSelectable(false),
+                        new SecondaryDrawerItem().withName(R.string.download).withIcon(R.mipmap.download_2).withIdentifier(3).withSelectable(false),
+                        new SecondaryDrawerItem().withName(R.string.multimedia).withIcon(R.mipmap.picture).withIdentifier(4).withSelectable(false),
+                        new SecondaryDrawerItem().withName(R.string.news).withIcon(R.mipmap.news).withIdentifier(5).withSelectable(false),
+                        new SecondaryDrawerItem().withName(R.string.about).withIcon(R.mipmap.help).withIdentifier(6).withSelectable(false)
                 )
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
