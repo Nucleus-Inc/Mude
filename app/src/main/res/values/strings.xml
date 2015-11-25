@@ -18,4 +18,18 @@
         das Nações Unidas (ONU), estima-se que, aproximadamente, R$ 200 bilhões
         são desviados no Brasil, por ano.
     </string>
+    <string name="ten_measure_msg">
+        O combate à corrupção pode ter um novo capítulo na nossa história e uma nova
+        realidade pode ser construída para quebrar o ciclo de impunidade.
+    </string>
+    <string name="ten_measure_handcufss">Criminalização do enriquecimento ilícito de agentes públicos</string>
+    <string name="ten_measure_refund">Prevenção à corrupção, transparência e proteção à fonte de informação</string>
+    <string name="ten_measure_strike">Resposabilização dos partidos políticos e criminalização do caixa 2</string>
+    <string name="ten_measure_positive_dynamic">Aumento das penas e crime hediondo para corrupção de altos valores</string>
+    <string name="ten_measure_priosioner">Reforma do sistema de prescrição penal</string>
+    <string name="ten_measure_exercise">Celeridade nas ações de improbabilidade administrativa</string>
+    <string name="ten_measure_law">Eficiência dos recursos no processo penal</string>
+    <string name="ten_measure_rules">Ajustes nas nulidades penais</string>
+    <string name="ten_measure_money_bag">Prisão preventiva para assegurar a devolução do dinheiro desviado</string>
+    <string name="ten_measure_expansive">Recuperação do lucro derivado do crime</string>
 </resources>

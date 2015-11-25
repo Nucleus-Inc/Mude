@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Toast;
+
 import com.eti.nucleus.app10medidas.R;
 import com.eti.nucleus.app10medidas.fragments.About;
 import com.eti.nucleus.app10medidas.fragments.Corruption;
@@ -80,8 +82,10 @@ public class DrawerNavigator{
                             }
                         }
 
-                        if(f!=null)
+                        if (f != null) {
+                            clearBackStack();
                             activity.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, f).commit();
+                        }
 
                         return false;
                     }
@@ -92,4 +96,11 @@ public class DrawerNavigator{
 
         return result;
     }
+
+    public void clearBackStack(){
+        for(int i=0;i<activity.getSupportFragmentManager().getBackStackEntryCount();i++){
+            activity.getSupportFragmentManager().popBackStack();
+        }
+    }
+
 }

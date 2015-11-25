@@ -1,6 +1,6 @@
 package com.eti.nucleus.app10medidas.fragments;
 
-import android.content.res.Configuration;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,15 +8,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
-
 import com.eti.nucleus.app10medidas.R;
 import com.eti.nucleus.app10medidas.activity.MainActivity;
+import com.eti.nucleus.app10medidas.modules.MyToolbar;
 
 public class TenMeasures extends Fragment implements View.OnClickListener{
 
     public Button participate;
     public Button know_more;
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        MyToolbar.activity.getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        MainActivity.result.getActionBarDrawerToggle().setDrawerIndicatorEnabled(true);
+    }
 
     @Nullable
     @Override
@@ -47,13 +53,21 @@ public class TenMeasures extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
+
+        Fragment f = null;
+
         switch (v.getId()){
             case R.id.ten_measure_know_more:
-                Toast.makeText(getActivity(),"SAIBA MAIS",Toast.LENGTH_SHORT).show();
+                f = new KnowMore();
                 break;
             case R.id.ten_measure_participate:
-                Toast.makeText(getActivity(),"PARTICIPE",Toast.LENGTH_SHORT).show();
+                f = new Participate();
                 break;
         }
+
+        if(f!=null)
+            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, f).addToBackStack(null).commit();
+
     }
+
 }

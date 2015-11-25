@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.eti.nucleus.app10medidas.R;
@@ -16,7 +17,7 @@ import com.mikepenz.materialdrawer.Drawer;
 public class MainActivity extends AppCompatActivity {
 
     public static Toolbar myToolbar;
-    public Drawer result;
+    public static Drawer result;
 
     private void start_toolbar(int title) {
         MyToolbar toolbar = new MyToolbar(MainActivity.this,title);
@@ -52,13 +53,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        return id == R.id.action_settings || super.onOptionsItemSelected(item);
+        switch (item.getItemId()){
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
-
         super.onSaveInstanceState(outState, outPersistentState);
     }
 
