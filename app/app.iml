@@ -105,6 +105,6 @@
     <orderEntry type="library" exported="" name="appcompat-v7-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="materialdrawer-4.4.8" level="project" />
     <orderEntry type="library" exported="" name="design-23.1.1" level="project" />
-    <orderEntry type="module" module-name="droidText.0.2" exported="" />
+    <orderEntry type="module" module-name="itextpdf-5.5.7" exported="" />
   </component>
 </module>
