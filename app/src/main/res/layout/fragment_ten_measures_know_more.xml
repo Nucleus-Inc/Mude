@@ -29,7 +29,7 @@
                 android:textColor="@color/material_drawer_primary_dark"
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
-                android:paddingTop="25dp"
+                android:paddingTop="10dp"
                 />
 
             <TextView

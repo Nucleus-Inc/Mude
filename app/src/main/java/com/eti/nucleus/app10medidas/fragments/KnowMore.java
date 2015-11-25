@@ -19,7 +19,6 @@ public class KnowMore extends Fragment{
         super.onAttach(context);
         MainActivity.result.getActionBarDrawerToggle().setDrawerIndicatorEnabled(false);
         MyToolbar.activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        Log.i("Know More Class", "onAttach()");
     }
 
     @Nullable

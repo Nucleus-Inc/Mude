@@ -32,4 +32,15 @@
     <string name="ten_measure_rules">Ajustes nas nulidades penais</string>
     <string name="ten_measure_money_bag">Prisão preventiva para assegurar a devolução do dinheiro desviado</string>
     <string name="ten_measure_expansive">Recuperação do lucro derivado do crime</string>
+    <string name="participate_title_1">Como posso participar?</string>
+    <string name="participate_title_2">Formulário de Adesão</string>
+    <string name="participate_subtext">Com 1,5 milhão de assinaturas, é possível apresentar um projeto de lei de iniciativa popular*. Esta é nossa meta.</string>
+    <string name="participate_subtext_2" formatted="false">
+        *Segundo o artigo 61, §2 da Constituição brasileira de 1998, regulamentado pela lei 9.709 de 1998,
+        é permitida a apresentação de projetos de Lei pelos poderes Legislativo, Executivo e pela iniciativa popular.
+        Neste último caso, a Constituição exige como procedimento a adesão mínima de 1% da população eleitoral nacional,
+        mediante assinaturas, distribuídos por pelo menos 5 unidades federativas e no mínimo 0,3% dos eleitores em cada
+        uma dessas unidades.
+    </string>
+    <string name="participate_subtext_3">Participe. Preencha o formulário padrão de coleta</string>
 </resources>
