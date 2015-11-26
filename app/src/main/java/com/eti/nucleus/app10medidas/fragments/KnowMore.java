@@ -16,14 +16,15 @@ public class KnowMore extends Fragment{
 
     @Override
     public void onAttach(Context context) {
+        MainActivity.myToolbar.setTitle("Saiba Mais");
+        MainActivity.actionBar.setHomeAsUpIndicator(R.drawable.ic_arrow_back_white_24dp);
         super.onAttach(context);
-        MainActivity.result.getActionBarDrawerToggle().setDrawerIndicatorEnabled(false);
-        MyToolbar.activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        MainActivity.isOpenDrawer = false;
         return inflater.inflate(R.layout.fragment_ten_measures_know_more,container,false);
     }
 

@@ -7,10 +7,10 @@ import com.eti.nucleus.app10medidas.R;
 public class MyToolbar{
 
     private int id;
-    public static AppCompatActivity activity;
+    public AppCompatActivity activity;
 
     public MyToolbar(AppCompatActivity activity,int id) {
-        MyToolbar.activity = activity;
+        this.activity = activity;
         setId(id);
     }
 

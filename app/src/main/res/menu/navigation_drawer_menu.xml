@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:checked="true"
+            android:id="@+id/navigation_drawer_idea"
+            android:icon="@drawable/idea"
+            android:title="@string/tenMeasures"
+            />
+
+        <item android:id="@+id/navigation_drawer_fraud"
+            android:icon="@drawable/fraud"
+            android:title="@string/corruption"
+            />
+
+        <item android:id="@+id/navigation_drawer_download_2"
+            android:icon="@drawable/download_2"
+            android:title="@string/download"
+            />
+        <item android:id="@+id/navigation_drawer_picture"
+            android:icon="@drawable/picture"
+            android:title="@string/multimedia"
+            />
+
+        <item android:id="@+id/navigation_drawer_news"
+            android:icon="@drawable/news"
+            android:title="@string/news"
+            />
+
+        <item android:id="@+id/navigation_drawer_help"
+            android:icon="@drawable/help"
+            android:title="@string/about"
+            />
+
+    </group>
+
+</menu>

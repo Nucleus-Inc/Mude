@@ -7,12 +7,17 @@
         <item name="material_drawer_background">@color/material_drawer_background</item>
         <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
         <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="android:actionMenuTextColor">#00FF00</item>
     </style>
 
     <style name="ToolbarTheme" parent="@style/Theme.AppCompat">
         <item name="android:textColorPrimary">@color/text_color</item>
         <item name="android:textColorSecondary">@color/text_color</item>
         <item name="actionMenuTextColor">@color/text_color</item>
+    </style>
+
+    <style name="NavigationViewTheme" parent="Widget.Design.NavigationView">
+        <item name="android:colorBackground">@color/card_background</item>
     </style>
 
 </resources>

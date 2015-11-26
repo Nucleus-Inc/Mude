@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -34,15 +35,15 @@ public class Participate extends Fragment implements View.OnClickListener{
 
     @Override
     public void onAttach(Context context) {
+        MainActivity.myToolbar.setTitle("Participe");
+        MainActivity.actionBar.setHomeAsUpIndicator(R.drawable.ic_arrow_back_white_24dp);
         super.onAttach(context);
-        MainActivity.result.getActionBarDrawerToggle().setDrawerIndicatorEnabled(false);
-        MyToolbar.activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        MyToolbar.activity.getSupportActionBar().setTitle("Participe");
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        MainActivity.isOpenDrawer = false;
         return inflater.inflate(R.layout.fragment_ten_measures_participate,container,false);
     }
 

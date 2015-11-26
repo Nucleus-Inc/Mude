@@ -20,6 +20,7 @@ public class TenMeasures extends Fragment implements View.OnClickListener{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        MainActivity.isOpenDrawer = true;
         return inflater.inflate(R.layout.fragment_ten_measures,container,false);
     }
 
@@ -33,21 +34,20 @@ public class TenMeasures extends Fragment implements View.OnClickListener{
         }
     }
 
-    private void set_hamburguer_button(){
-        MyToolbar.activity.getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        MainActivity.result.getActionBarDrawerToggle().setDrawerIndicatorEnabled(true);
-    }
-
     private void set_title(){
         MainActivity.myToolbar.setTitle(R.string.tenMeasures);
+    }
+
+    private void set_menu_button(){
+        MainActivity.actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        set_hamburguer_button();
         set_title();
         listen_buttons();
+        set_menu_button();
     }
 
     @Override

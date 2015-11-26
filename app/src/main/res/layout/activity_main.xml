@@ -7,11 +7,6 @@
     android:background="@color/material_drawer_background"
     >
 
-    <include layout="@layout/toolbar_layout"/>
-
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <include layout="@layout/navigator_drawer_layout"/>
 
 </LinearLayout>
