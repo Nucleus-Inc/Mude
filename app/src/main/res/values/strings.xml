@@ -43,4 +43,7 @@
         uma dessas unidades.
     </string>
     <string name="participate_subtext_3">Participe. Preencha o formulário padrão de coleta</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">CANCEL</string>
+    <string name="path_name">Local</string>
 </resources>

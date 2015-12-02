@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import com.eti.nucleus.app10medidas.R;
 import com.eti.nucleus.app10medidas.fragments.About;
+import com.eti.nucleus.app10medidas.fragments.ChooseDirectory;
 import com.eti.nucleus.app10medidas.fragments.Corruption;
 import com.eti.nucleus.app10medidas.fragments.Downloads;
 import com.eti.nucleus.app10medidas.fragments.Multimedia;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public static Toolbar myToolbar;
     public static ActionBar actionBar;
     public static boolean isOpenDrawer = true;
+    public static ChooseDirectory chooseDirectory;
     public DrawerLayout drawerLayout;
 
     private void set_display_home_button(){
@@ -77,6 +79,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 else
                     onBackPressed();
                 return true;
+            case R.id.local_path:
+                chooseDirectory = new ChooseDirectory();
+                chooseDirectory.show(getSupportFragmentManager(),"");
             default:
                 return super.onOptionsItemSelected(item);
         }

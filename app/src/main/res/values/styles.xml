@@ -16,6 +16,11 @@
         <item name="actionMenuTextColor">@color/text_color</item>
     </style>
 
+    <style name="PopupTheme" parent="@style/Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/material_drawer_primary_dark</item>
+        <item name="android:background">@color/card_background</item>
+    </style>
+
     <style name="NavigationViewTheme" parent="Widget.Design.NavigationView">
         <item name="android:colorBackground">@color/card_background</item>
     </style>

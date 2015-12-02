@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,6 +50,12 @@ public class Participate extends Fragment implements View.OnClickListener{
     }
 
     @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
         savePDF = (Button) getActivity().findViewById(R.id.participate_savePDF);
@@ -59,6 +67,11 @@ public class Participate extends Fragment implements View.OnClickListener{
         if(v.getId() == R.id.participate_savePDF) {
             createPDF();
         }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.menu_participate,menu);
     }
 
     public void createPDF(){
