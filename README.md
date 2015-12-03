@@ -2,7 +2,7 @@
 
 Em construção
 
-<table>
+<table border="0px">
 	<tr>
 		<td>
 			<img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/assinometro.jpg"/>
