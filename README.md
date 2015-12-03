@@ -4,6 +4,11 @@ Em construção
 
 <table>
 	<tr>
-		<img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/10medidas.jpg"/>
+		<td>
+			<img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/assinometro.jpg"/>
+		</td>
+		<td>
+			<img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/10medidas.jpg"/>
+		</td>
 	</tr>
 </table>
