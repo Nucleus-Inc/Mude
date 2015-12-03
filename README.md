@@ -1,6 +1,6 @@
 # Aplicativo 10 Medidas
 
-<b>Em construção</b>
+<b>Em construção:</b>
 
 <table>
 	<tr border="0">
