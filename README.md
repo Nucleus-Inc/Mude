@@ -2,8 +2,11 @@
 
 <b>Em construção:</b>
 
-<table>
-	<tr border="0">
+<table border="0">
+	<tr>
+		<td>
+			<img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/nav-drawer.jpg"/>
+		</td>
 		<td>
 			<img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/assinometro.jpg"/>
 		</td>
