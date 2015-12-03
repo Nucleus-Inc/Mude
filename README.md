@@ -29,6 +29,6 @@
 - Devolução do dinheiro desviado
 - Sistema de justiça mais eficiente
 
-Ajude a combater a corrupção, <b>assine a liste de apoiamento</b>
+Ajude a combater a corrupção, <b>assine a lista de apoiamento</b>
 
 <b>Acesse:</b> www.10medidas.mpf.mp.br e saiba como participar.
