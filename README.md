@@ -1,11 +1,11 @@
+<!DOCTYPE html>
 <html>
-
 	<head>
-		
+		<title name="Readme.md"/>
 	</head>
-
 	<body>
-		<h1>Aplicativo 10 Medidas</h1>
+
+	<p><b>Aplicativo 10 Medidas</b> - Em Construção</p>
+
 	</body>
-	
 </html>
