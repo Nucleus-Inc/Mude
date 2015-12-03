@@ -1,3 +1,4 @@
-# Aplicativo 10 Medidas - Versão Android
+# Aplicativo 10 Medidas
 
 Em construção
+
