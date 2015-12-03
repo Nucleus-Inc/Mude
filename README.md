@@ -23,10 +23,12 @@
 
 <img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/campanha-mpf.jpg" />
 
+<b>Apoie essa ideia!</b>
+
 - Penas mais severas
 - Devolução do dinheiro desviado
 - Sistema de justiça mais eficiente
 
-Ajude a combater a corrupção, assine a liste de apoiamento
+Ajude a combater a corrupção, <h3>assine a liste de apoiamento</h3>
 
-Acesse: www.10medidas.mpf.mp.br e saiba como participar.
+<b>Acesse:</b> www.10medidas.mpf.mp.br e saiba como participar.
