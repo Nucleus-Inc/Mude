@@ -16,4 +16,4 @@ Em construção
 	</tr>
 </table>
 
-<h1>Eduardo Henrique Rocha de Castro</h1>
+<h2>Sobre o Projeto</h2>
