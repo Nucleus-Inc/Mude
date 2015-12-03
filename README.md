@@ -1,23 +1,11 @@
-<!DOCTYPE html>
 <html>
-<body>
 
-<table border="0">
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <td>January</td>
-    <td>$100</td>
-  </tr>
-  <tr>
-    <td>February</td>
-    <td>$80</td>
-  </tr>
-</table>
+	<head>
+		
+	</head>
 
-<p><b>Note:</b> The border attribute is not supported in HTML5. Use CSS instead.</p>
-
-</body>
+	<body>
+		<h1>Aplicativo 10 Medidas</h1>
+	</body>
+	
 </html>
