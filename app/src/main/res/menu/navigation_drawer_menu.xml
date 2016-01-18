@@ -21,11 +21,13 @@
         <item android:id="@+id/navigation_drawer_picture"
             android:icon="@drawable/picture"
             android:title="@string/multimedia"
+            android:visible="false"
             />
 
         <item android:id="@+id/navigation_drawer_news"
             android:icon="@drawable/news"
             android:title="@string/news"
+            android:visible="false"
             />
 
         <item android:id="@+id/navigation_drawer_help"

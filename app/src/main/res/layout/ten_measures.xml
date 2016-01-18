@@ -43,25 +43,17 @@
         android:layout_marginLeft="6dp"
         android:layout_marginStart="6dp"
         android:layout_marginRight="6dp"
-        android:layout_marginBottom="3dp"
+        android:layout_marginBottom="6dp"
         android:background="@drawable/know_more_selector_button"
         android:textColor="@color/md_white_1000"
         />
 
     <Button
         android:id="@+id/ten_measure_participate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Participe"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="6dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/participate_selector_button"
-        android:textColor="@color/md_white_1000"
-        />
+        android:visibility="invisible" />
 
 </RelativeLayout>

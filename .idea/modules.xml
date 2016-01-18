@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/App10medidas.iml" filepath="$PROJECT_DIR$/App10medidas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mude.iml" filepath="$PROJECT_DIR$/Mude.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/itextpdf-5.5.7/itextpdf-5.5.7.iml" filepath="$PROJECT_DIR$/itextpdf-5.5.7/itextpdf-5.5.7.iml" />
     </modules>
   </component>
 </project>

@@ -1,6 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:fillViewport="false"
+    android:id="@+id/frag_about">
 
-</LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:layout_alignBottom="@+id/divider"
+        android:layout_margin="5dp"
+        android:background="@color/card_background"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/mude_id_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mude App"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/mude_id_app_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Um app para divulgar as 10 medidas contra a corrupção do Ministério Público Federal"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_app"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/mude_id_app_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Versão 1.0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_app_1"
+                />
+
+            <LinearLayout
+                android:layout_below="@+id/mude_id_app_2"
+                android:id="@+id/mude_id_app_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_language_black_48dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visite nosso Site"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/mude_id_app_layout"
+                android:id="@+id/mude_id_app_layout_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_thumb_up_black_48dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Curta nossa fanpage!"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/apoio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APOIO"
+                android:textSize="16sp"
+                android:layout_below="@+id/mude_id_app_layout_2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/mude_id_app_layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/apoio"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_institution_icon"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ministério Público Federal"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mude_id_app_layout_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/mude_id_app_layout_3"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_android_icon_192x192"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instituto Federal do Ceará"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bibliotecas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BIBLIOTECAS"
+                android:textSize="16sp"
+                android:layout_below="@+id/mude_id_app_layout_4"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/mude_id_app_layout_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/bibliotecas"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_build_black_48dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Material Drawer Design"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

@@ -1,2 +1,0 @@
-configurations.create("default")
-artifacts.add("default", file('droidText.0.2.jar'))

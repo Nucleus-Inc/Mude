@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.eti.nucleus.app10medidas"
+        applicationId "br.eti.nucleus.mude"
         minSdkVersion 19
         targetSdkVersion 23
         versionCode 1
@@ -27,5 +27,4 @@ dependencies {
     compile('com.mikepenz:materialdrawer:4.4.8@aar') {
         transitive = true
     }
-    compile project(':itextpdf-5.5.7')
 }

@@ -8,22 +8,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:id="@+id/ten_measure_title"
-        android:text="@string/ten_measure_title_card"
+        android:text="Nossa Meta"
         android:textSize="30sp"
         android:textColor="@color/material_drawer_primary_dark"
         android:textStyle="bold"
         android:layout_marginTop="10dp"
-        />
-    <TextView
-        android:id="@+id/ten_measure_subtitle"
-        android:text="@string/ten_measure_subtitle_card"
-        android:textSize="14sp"
-        android:textColor="@color/material_drawer_primary_dark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/ten_measure_title"
         />
     <TextView
         android:id="@+id/ten_measure_number_subscriptions"
@@ -35,8 +24,30 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
+        android:layout_below="@+id/ten_measure_title"
+        />
+    <TextView
+        android:id="@+id/ten_measure_subtitle"
+        android:text="Assinaturas"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/material_drawer_primary_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ten_measure_number_subscriptions"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ten_measure_subtitle_2"
+        android:text="Precisamos de todas essas assinaturas para criarmos um projeto de lei que ajude a varrear a corrupção do nosso país."
+        android:textSize="16sp"
+        android:textColor="@color/material_drawer_primary_dark"
         android:layout_below="@+id/ten_measure_subtitle"
-        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         />
 </RelativeLayout>
