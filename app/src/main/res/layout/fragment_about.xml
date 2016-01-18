@@ -18,7 +18,7 @@
         android:background="@color/card_background"
         >
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
             <TextView
@@ -56,7 +56,7 @@
             <LinearLayout
                 android:layout_below="@+id/mude_id_app_2"
                 android:id="@+id/mude_id_app_layout"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="10dp"

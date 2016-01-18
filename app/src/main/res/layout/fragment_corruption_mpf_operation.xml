@@ -15,39 +15,102 @@
         android:background="@color/card_background">
 
         <RelativeLayout
-            android:id="@+id/know_more_layout"
+            android:id="@+id/corruption_types_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
 
             <TextView
-                android:id="@+id/know_more_title"
+                android:id="@+id/mpf_operation_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ten_measure_title_card_2"
+                android:text="Operações do MPF"
                 android:textSize="30sp"
                 android:textColor="@color/material_drawer_primary_dark"
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
                 android:paddingTop="10dp"
-                />
+            />
 
             <TextView
-                android:id="@+id/know_more_subtitle"
+                android:id="@+id/mpf_operation_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ten_measure_msg"
-                android:layout_below="@+id/know_more_title"
-                android:gravity="center"
+                android:text="Casos Emblemáticos"
+                android:layout_below="@+id/mpf_operation_title"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
                 android:textColor="@color/material_drawer_primary_dark"
                 android:textSize="14sp"
                 android:padding="5dp"
-                />
+            />
+
+            <TextView
+                android:id="@+id/mpf_operation_subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecione um dos ícones abaixo para conhecer detalhes da atuação do MPF em diversos casos de corrupção."
+                android:textColor="@color/material_drawer_primary_icon"
+                android:layout_below="@+id/mpf_operation_subtitle"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+            />
 
             <LinearLayout
-                android:layout_below="@+id/know_more_subtitle"
-                android:id="@+id/know_more_handcuffs"
+                android:layout_below="@+id/mpf_operation_subtitle2"
+                android:id="@+id/mpf_operation_zelotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_zelotes"
+                        android:layout_marginEnd="15dp"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zelotes"
+                        android:textColor="@color/material_drawer_primary_dark"
+                        android:textSize="14sp"
+                        android:paddingTop="15dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_below="@+id/mpf_operation_zelotes"
+            android:id="@+id/mpf_operation_lava_jato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_lavajato"
+                    android:layout_marginEnd="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lava Jato"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:textSize="14sp"
+                    android:paddingTop="15dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/mpf_operation_lava_jato"
+                android:id="@+id/mpf_operation_banco_santos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -57,247 +120,234 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/handcuffs"
+                    android:background="@drawable/ic_bancosantos"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ten_measure_handcufss"
-                    android:paddingTop="10dp"
+                    android:text="Banco Santos"
                     android:textColor="@color/material_drawer_primary_dark"
                     android:textSize="14sp"
+                    android:paddingTop="15dp"
                     />
             </LinearLayout>
-
             <LinearLayout
-                android:layout_below="@+id/know_more_handcuffs"
-                android:id="@+id/know_more_refund"
+                android:layout_below="@+id/mpf_operation_banco_santos"
+                android:id="@+id/mpf_operation_sanguessuga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/refund"
+                    android:background="@drawable/ic_opera"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ten_measure_refund"
-                    android:paddingTop="10dp"
+                    android:text="Sanguessuga"
                     android:textColor="@color/material_drawer_primary_dark"
                     android:textSize="14sp"
+                    android:paddingTop="15dp"
                     />
             </LinearLayout>
-
             <LinearLayout
-                android:layout_below="@+id/know_more_refund"
-                android:id="@+id/know_more_strike"
+                android:layout_below="@+id/mpf_operation_sanguessuga"
+                android:id="@+id/mpf_operation_sudam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/strike"
+                    android:background="@drawable/ic_sudam"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ten_measure_strike"
-                    android:paddingTop="10dp"
+                    android:text="Sudam"
                     android:textColor="@color/material_drawer_primary_dark"
                     android:textSize="14sp"
+                    android:paddingTop="15dp"
                     />
             </LinearLayout>
-
             <LinearLayout
-                android:layout_below="@+id/know_more_strike"
-                android:id="@+id/know_more_positive_dynamic"
+                android:layout_below="@+id/mpf_operation_sudam"
+                android:id="@+id/mpf_operation_mensalao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/positive_dynamic"
+                    android:background="@drawable/ic_mensa"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ten_measure_positive_dynamic"
-                    android:paddingTop="10dp"
+                    android:text="Mensalão"
                     android:textColor="@color/material_drawer_primary_dark"
                     android:textSize="14sp"
+                    android:paddingTop="15dp"
                     />
             </LinearLayout>
-
             <LinearLayout
-                android:layout_below="@+id/know_more_positive_dynamic"
-                android:id="@+id/know_more_priosioner"
+                android:layout_below="@+id/mpf_operation_mensalao"
+                android:id="@+id/mpf_operation_carlcach"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/prisoner"
+                    android:background="@drawable/ic_carlcac"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ten_measure_priosioner"
-                    android:paddingTop="10dp"
+                    android:text="Carlinhos Cachoeira"
                     android:textColor="@color/material_drawer_primary_dark"
                     android:textSize="14sp"
+                    android:paddingTop="15dp"
                     />
             </LinearLayout>
-
             <LinearLayout
-                android:layout_below="@+id/know_more_priosioner"
-                android:id="@+id/know_more_exercise"
+                android:layout_below="@+id/mpf_operation_carlcach"
+                android:id="@+id/mpf_operation_banestado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/exercise"
+                    android:background="@drawable/ic_banestado"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ten_measure_exercise"
-                    android:paddingTop="10dp"
+                    android:text="Banestado"
                     android:textColor="@color/material_drawer_primary_dark"
                     android:textSize="14sp"
+                    android:paddingTop="15dp"
                     />
             </LinearLayout>
-
             <LinearLayout
-                android:layout_below="@+id/know_more_exercise"
-                android:id="@+id/know_more_law"
+                android:layout_below="@+id/mpf_operation_banestado"
+                android:id="@+id/mpf_operation_opanaconda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/law"
+                    android:background="@drawable/ic_anac"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ten_measure_law"
-                    android:paddingTop="10dp"
+                    android:text="Operação Anaconda"
                     android:textColor="@color/material_drawer_primary_dark"
                     android:textSize="14sp"
+                    android:paddingTop="15dp"
                     />
             </LinearLayout>
-
             <LinearLayout
-                android:layout_below="@+id/know_more_law"
-                android:id="@+id/know_more_rules"
+                android:layout_below="@+id/mpf_operation_opanaconda"
+                android:id="@+id/mpf_operation_luiz_estevao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rules"
+                    android:background="@drawable/ic_luizest"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ten_measure_rules"
-                    android:paddingTop="10dp"
+                    android:text="Luiz Estevão"
                     android:textColor="@color/material_drawer_primary_dark"
                     android:textSize="14sp"
+                    android:paddingTop="15dp"
                     />
             </LinearLayout>
-
             <LinearLayout
-                android:layout_below="@+id/know_more_rules"
-                android:id="@+id/know_more_money_bag"
+                android:layout_below="@+id/mpf_operation_luiz_estevao"
+                android:id="@+id/mpf_operation_scuderie"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/money_bag"
+                    android:background="@drawable/ic_luizest"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ten_measure_money_bag"
-                    android:paddingTop="10dp"
+                    android:text="Scuderie Le Cocq"
                     android:textColor="@color/material_drawer_primary_dark"
                     android:textSize="14sp"
+                    android:paddingTop="15dp"
                     />
             </LinearLayout>
-
             <LinearLayout
-                android:layout_below="@+id/know_more_money_bag"
-                android:id="@+id/know_more_expensive_2"
+                android:layout_below="@+id/mpf_operation_scuderie"
+                android:id="@+id/mpf_operation_jorgina_freitas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:padding="10dp"
                 >
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/expensive_2"
+                    android:background="@drawable/ic_jorgina"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/ten_measure_expansive"
-                    android:paddingTop="10dp"
+                    android:text="Jorgina de Freitas"
                     android:textColor="@color/material_drawer_primary_dark"
                     android:textSize="14sp"
+                    android:paddingTop="15dp"
                     />
             </LinearLayout>
-
         </RelativeLayout>
-
     </android.support.v7.widget.CardView>
-
 </ScrollView>

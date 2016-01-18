@@ -8,11 +8,33 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import br.eti.nucleus.mude.R;
 import br.eti.nucleus.mude.activitys.MainActivity;
 
-public class Corruption extends Fragment {
+public class Corruption extends Fragment implements View.OnClickListener{
+
+    private Button corruptionType;
+    private Button mpfOperations;
+
+    private void listen_buttons(){
+        corruptionType = (Button) getActivity().findViewById(R.id.corruption_about);
+        if(corruptionType!=null) {
+            corruptionType.setOnClickListener(this);
+            mpfOperations = (Button) getActivity().findViewById(R.id.corruption_1_about);
+            if(mpfOperations!=null)
+                mpfOperations.setOnClickListener(this);
+        }
+    }
+
+    private void set_title(){
+        MainActivity.myToolbar.setTitle("Corrupção");
+    }
+
+    private void set_menu_button(){
+        MainActivity.actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
+    }
 
     @Nullable
     @Override
@@ -35,6 +57,25 @@ public class Corruption extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        MainActivity.myToolbar.setTitle(R.string.corruption);
+        set_title();
+        listen_buttons();
+        set_menu_button();
+    }
+
+    @Override
+    public void onClick(View v) {
+        Fragment f = null;
+
+        switch (v.getId()){
+            case R.id.corruption_about:
+                f = new CorruptionTypes();
+                break;
+            case R.id.corruption_1_about:
+                f = new MPFOperations();
+                break;
+        }
+
+        if(f!=null)
+            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, f).addToBackStack(null).commit();
     }
 }
