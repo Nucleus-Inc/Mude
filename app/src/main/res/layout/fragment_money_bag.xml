@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:background="@color/card_background">
+
+        <RelativeLayout
+            android:id="@+id/know_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/handcuffs_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resposabilização dos Partidos Políticos e Criminalização do Caixa 2"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A #medida9 propõe a criação da hipótese de prisão extraordinária para “permitir a identificação e a localização ou assegurar a devolução do produto e proveito do crime ou seu equivalente, ou para evitar que sejam utilizados para financiar a fuga ou a defesa do investigado ou acusado, quando as medidas cautelares reais forem ineficazes ou insuficientes ou enquanto estiverem sendo implementadas”. Além disso, a #medida9 propõe mudanças para que o dinheiro sujo seja rastreado mais rapidamente, facilitando tanto as investigações quanto o bloqueio de bens obtidos ilicitamente."
+                android:layout_below="@+id/handcuffs_title"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

@@ -46,7 +46,7 @@
                 />
 
             <LinearLayout
-                android:layout_below="@+id/know_more_subtitle"
+                android:layout_below="@+id/know_more_refund"
                 android:id="@+id/know_more_handcuffs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,7 +72,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_below="@+id/know_more_handcuffs"
+
+                android:layout_below="@+id/know_more_subtitle"
                 android:id="@+id/know_more_refund"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -97,7 +98,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_below="@+id/know_more_refund"
+                android:layout_below="@+id/know_more_rules"
                 android:id="@+id/know_more_strike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,7 +123,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_below="@+id/know_more_strike"
+                android:layout_below="@+id/know_more_handcuffs"
                 android:id="@+id/know_more_positive_dynamic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -147,7 +148,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_below="@+id/know_more_positive_dynamic"
+                android:layout_below="@+id/know_more_exercise"
                 android:id="@+id/know_more_priosioner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -172,7 +173,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_below="@+id/know_more_priosioner"
+                android:layout_below="@+id/know_more_law"
                 android:id="@+id/know_more_exercise"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -197,7 +198,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_below="@+id/know_more_exercise"
+                android:layout_below="@+id/know_more_positive_dynamic"
                 android:id="@+id/know_more_law"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -222,7 +223,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_below="@+id/know_more_law"
+                android:layout_below="@+id/know_more_priosioner"
                 android:id="@+id/know_more_rules"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -247,7 +248,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_below="@+id/know_more_rules"
+                android:layout_below="@+id/know_more_strike"
                 android:id="@+id/know_more_money_bag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

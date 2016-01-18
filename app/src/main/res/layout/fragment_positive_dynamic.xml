@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:background="@color/card_background">
+
+        <RelativeLayout
+            android:id="@+id/know_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/handcuffs_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aumento das Penas e Crime Hediondo Para Corrupção de Altos Valores"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="É extremamente difícil descobrir o crime de corrupção e, quando isso ocorre, é mais difícil ainda prová-lo. Mesmo quando há provas, pode não se conseguir uma condenação em virtude de questões processuais, como nulidades. Ainda que se descubra, prove e alcance uma condenação, a chance de prescrição é real, o que pode ensejar absoluta impunidade. Por fim, quando a pena é aplicada, ela é normalmente inferior a quatro anos e é perdoada, por decreto anual de indulto, depois do cumprimento de apenas um quarto dela. A corrupção é hoje, portanto, um crime de alto benefício e baixo risco, o que pode incentivar sua prática. A #medida3 transforma a corrupção em um crime de alto risco no tocante à quantidade da punição, aumentando, também, a probabilidade de aplicação da pena por diminuir a chance de prescrição."
+                android:layout_below="@+id/handcuffs_title"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Com as alterações, as penas, que hoje são de 2 a 12 anos, passam a ser de 4 a 12 anos, lembrando que, no Brasil, as penas de réus de colarinho branco ficam próximas ao patamar mínimo. Com isso, a prática do crime passa a implicar, no mínimo, prisão em regime semiaberto. Esse aumento da pena também amplia o prazo prescricional que, quando a pena supera 4 anos, passa a ser de 12 anos. Além disso, a pena é escalonada segundo o valor envolvido na corrupção, podendo variar entre 12 e 25 anos, quando os valores desviados ultrapassam R$ 8 milhões. Essa pena é ainda inferior àquela do homicídio qualificado, mas é bem maior do que a atual. A corrupção mata, como decorrência do cerceamento de direitos essenciais, como segurança, saúde, educação e saneamento básico. Por isso, a referência punitiva da corrupção de altos valores passa a ser a pena do homicídio. Por fim, a corrupção envolvendo valores superiores a 100 salários mínimos passa a ser considerada crime hediondo, não cabendo, dentre outros benefícios, o perdão da pena, integral ou parcial (indulto ou comutação)."
+                android:layout_below="@+id/handcuffs_subtitle"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

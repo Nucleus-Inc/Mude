@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:background="@color/card_background">
+
+        <RelativeLayout
+            android:id="@+id/know_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/handcuffs_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eficiência dos Recursos no Processo Penal"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="É comum que processos envolvendo crimes graves e complexos, praticados por réus de colarinho branco, demorem mais de 15 anos em tribunais após a condenação, pois as defesas empregam estratégias protelatórias. Além de poder acarretar prescrição, essa demora cria um ambiente de impunidade, que estimula a prática de crimes. Com o objetivo de contribuir com a celeridade na tramitação de recursos sem prejudicar o direito de defesa, a #medida4 propõe 11 alterações pontuais Penal (CPP) e uma emenda constitucional."
+                android:layout_below="@+id/handcuffs_title"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Essas alterações incluem a possibilidade de execução imediata da condenação quando o tribunal reconhece abuso do direito de recorrer; a revogação dos embargos infringentes e de nulidade; a extinção da figura do revisor; a vedação dos embargos de declaração; a simultaneidade do julgamento dos recursos especiais e extraordinários; novas regras para habeas corpus; e a possibilidade de execução provisória da pena após julgamento de mérito do caso por tribunal de apelação, conforme acontece em inúmeros países."
+                android:layout_below="@+id/handcuffs_subtitle"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

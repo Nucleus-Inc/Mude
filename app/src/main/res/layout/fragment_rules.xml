@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:background="@color/card_background">
+
+        <RelativeLayout
+            android:id="@+id/know_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/handcuffs_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajustes nas Nulidades Penais"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A #medida7 propõe uma série de alterações no capítulo de nulidades do Código de Processo Penal. Os objetivos são ampliar a preclusão de alegações de nulidade; condicionar a superação de preclusões à interrupção da prescrição a partir do momento em que a parte deveria ter alegado o defeito e se omitiu; estabelecer, como dever do juiz e das partes, o aproveitamento máximo dos atos processuais; e exigir a demonstração, pelas partes, do prejuízo gerado por um defeito processual à luz de circunstâncias concretas."
+                android:layout_below="@+id/handcuffs_title"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Além disso, sugere-se a inserção de novos parágrafos para acrescentar causas de exclusão de ilicitude previstas no Direito norte-americano, país de forte tradição democrática de onde foi importada nossa doutrina da exclusão da prova ilícita (exclusionary rule). Essas mudanças objetivam reservar os casos de anulação e exclusão da prova para quando houver uma violação real de direitos do réu e a exclusão cumprir seu fim, que é incentivar um comportamento correto da Administração Pública."
+                android:layout_below="@+id/handcuffs_subtitle"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

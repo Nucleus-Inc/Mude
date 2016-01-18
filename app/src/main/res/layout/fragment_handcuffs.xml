@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:background="@color/card_background">
+
+        <RelativeLayout
+            android:id="@+id/know_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/handcuffs_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Criminalização do Enriquecimento ilícito de Agentes Públicos"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A dificuldade de provar a corrupção assegura a impunidade e incentiva o comportamento corrupto. A criminalização do enriquecimento ilícito garante que o agente não fique impune mesmo quando não for possível descobrir ou comprovar quais foram os atos específicos de corrupção praticados."
+                android:layout_below="@+id/handcuffs_title"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A #medida2 propõe a tipificação do enriquecimento ilícito, com penas de três a oito anos, mas passíveis de substituição no caso de delitos menos graves. O ônus de provar a existência de renda discrepante da fortuna acumulada é da acusação. Se a investigação ou o acusado forem capazes de suscitar dúvida razoável quanto à ilicitude da renda, será caso de absolvição."
+                android:layout_below="@+id/handcuffs_subtitle"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

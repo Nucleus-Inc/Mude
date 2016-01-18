@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:background="@color/card_background">
+
+        <RelativeLayout
+            android:id="@+id/know_more_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/handcuffs_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prevenção à Corrupção, Transparência e Proteção à Fonte de Informação"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para prevenir a corrupção, o MPF sugere a possibilidade da realização de testes de integridade, isto é, a “simulação de situações, sem o conhecimento do agente público ou empregado, com o objetivo de testar sua conduta moral e predisposição para cometer crimes contra a Administração Pública”. A realização desses testes é incentivada pela Transparência Internacional e pela Organização das Nações Unidas (ONU) e é um exemplo de sucesso em alguns lugares do mundo."
+                android:layout_below="@+id/handcuffs_title"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Outra proposta é o investimento de um percentual, entre 5% e 15%, dos recursos de publicidade dos entes da Administração Pública em ações e programas de marketing voltados a estabelecer uma cultura de intolerância à corrupção, a conscientizar a população dos danos sociais e individuais causados por ela, a angariar apoio público para medidas contra a corrupção e a reportar esse crime. Propõe-se, também, o treinamento reiterado de todos os funcionários públicos em posturas e procedimentos contra a corrupção, o estabelecimento de códigos de ética claros, adaptados para cada carreira, e a realização de programas de conscientização e pesquisas em escolas e universidades."
+                android:layout_below="@+id/handcuffs_subtitle"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+            <TextView
+                android:id="@+id/handcuffs_subtitle_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para estimular a denúncia de casos de corrupção, o Ministério Público propõe a garantia de sigilo da fonte, com a ressalva de que ninguém pode ser condenado apenas com base na palavra de informante confidencial. Prevê-se, ainda, a possibilidade de ser revelada a identidade do informante se ele fizer denúncias falsas."
+                android:layout_below="@+id/handcuffs_subtitle_2"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textSize="14sp"
+                android:padding="5dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>
