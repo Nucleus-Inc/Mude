@@ -5,16 +5,16 @@
 <table border="0">
 	<tr>
 		<td>
-			<img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/nav-drawer.jpg"/>
+			<img src="https://github.com/eduhrcastro/Mude/blob/master/image/mude_icon.jpg"/>
 		</td>
 		<td>
-			<img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/assinometro.jpg"/>
+			<img src="https://github.com/eduhrcastro/Mude/blob/master/image/menu.jpg"/>
 		</td>
 		<td>
-			<img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/10medidas.jpg"/>
+			<img src="https://github.com/eduhrcastro/Mude/blob/master/image/nossa_meta.jpg"/>
 		</td>
 		<td>
-			<img src="https://github.com/eduhcastro22/App10medidas/blob/master/image/participe.jpg"/>
+			<img src="https://github.com/eduhrcastro/Mude/blob/master/image/sobre.jpg"/>
 		</td>
 	</tr>
 </table>
