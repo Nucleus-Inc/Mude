@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:fillViewport="false"
+    android:id="@+id/frag_about">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:layout_alignBottom="@+id/divider"
+        android:layout_margin="5dp"
+        android:background="@color/card_background"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/mude_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Improbidade Administrativa"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/mude_id_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conceito"
+                android:textSize="20sp"
+                android:textColor="@color/material_drawer_accent_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_title"
+                />
+
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\nDos Atos de Improbidade Administrativa que Importam Enriquecimento Ilícito
+\nArt. 9° Constitui ato de improbidade administrativa importando enriquecimento ilícito auferir qualquer tipo de vantagem patrimonial indevida em razão do exercício de cargo, mandato, função, emprego ou atividade nas entidades mencionadas no art. 1° desta lei, e notadamente:
+\n
+\nI - receber, para si ou para outrem, dinheiro, bem móvel ou imóvel, ou qualquer outra vantagem econômica, direta ou indireta, a título de comissão, percentagem, gratificação ou presente de quem tenha interesse, direto ou indireto, que possa ser atingido ou amparado por ação ou omissão decorrente das atribuições do agente público;
+\nII - perceber vantagem econômica, direta ou indireta, para facilitar a aquisição, permuta ou locação de bem móvel ou imóvel, ou a contratação de serviços pelas entidades referidas no art. 1° por preço superior ao valor de mercado;
+\nIII - perceber vantagem econômica, direta ou indireta, para facilitar a alienação, permuta ou locação de bem público ou o fornecimento de serviço por ente estatal por preço inferior ao valor de mercado;
+\nIV - utilizar, em obra ou serviço particular, veículos, máquinas, equipamentos ou material de qualquer natureza, de propriedade ou a disposição de qualquer das entidades mencionadas no art. 1° desta lei, bem como o trabalho de servidores públicos, empregados ou terceiros contratados por essas entidades;
+\nV - receber vantagem econômica de qualquer natureza, direta ou indireta, para tolerar a exploração ou a prática de jogos de azar, de lenocínio, de narcotráfico, de contrabando, de usura ou de qualquer outra atividade ilícita, ou aceitar promessa de tal vantagem;
+\nVI - receber vantagem econômica de qualquer natureza, direta ou indireta, para fazer declaração falsa sobre medição ou avaliação em obras públicas ou qualquer outro serviço, ou sobre quantidade, peso, medida, qualidade ou característica de mercadorias ou bens fornecidos a qualquer das entidades mencionadas no art. 1º desta lei;
+\nVII - adquirir, para si ou para outrem, no exercício de mandato, cargo, emprego ou função pública, bens de qualquer natureza cujo valor seja desproporcional a evolução do patrimônio ou a renda do agente público;
+\nVIII - aceitar emprego, comissão ou exercer atividade de consultoria ou assessoramento para pessoa física ou jurídica que tenha interesse suscetível de ser atingido ou amparado por ação ou omissão decorrente das atribuições do agente público, durante a atividade;
+\nIX - perceber vantagem econômica para intermediar a liberação ou aplicação de verba pública de qualquer natureza;
+\nX - receber vantagem econômica de qualquer natureza, direta ou indiretamente, para omitir ato de ofício, providência ou declaração a que esteja obrigado;
+\nXI - incorporar, por qualquer forma, ao seu patrimônio bens, rendas, verbas ou valores integrantes do acervo patrimonial das entidades mencionadas no art. 1° desta lei;
+\nXII - usar, em proveito próprio, bens, rendas, verbas ou valores integrantes do acervo patrimonial das entidades mencionadas no art. 1° desta lei.
+\n
+\n
+\nDos Atos de Improbidade Administrativa que Causam Prejuízo ao Erário
+\nArt. 10. Constitui ato de improbidade administrativa que causa lesão ao erário qualquer ação ou omissão, dolosa ou culposa, que enseje perda patrimonial, desvio, apropriação, malbaratamento ou dilapidação dos bens ou haveres das entidades referidas no art. 1º desta lei, e notadamente:
+\n
+\nI - facilitar ou concorrer por qualquer forma para a incorporação ao patrimônio particular, de pessoa física ou jurídica, de bens, rendas, verbas ou valores integrantes do acervo patrimonial das entidades mencionadas no art. 1º desta lei;
+\nII - permitir ou concorrer para que pessoa física ou jurídica privada utilize bens, rendas, verbas ou valores integrantes do acervo patrimonial das entidades mencionadas no art. 1º desta lei, sem a observância das formalidades legais ou regulamentares aplicáveis a espécie;
+\nIII - doar a pessoa física ou jurídica bem como ao ente despersonalizado, ainda que de fins educativos ou assistências, bens, rendas, verbas ou valores do patrimônio de qualquer das entidades mencionadas no art. 1º desta lei, sem observância das formalidades legais e regulamentares aplicáveis a espécie;
+\nIV - permitir ou facilitar a alienação, permuta ou locação de bem integrante do patrimônio de qualquer das entidades referidas no art. 1º desta lei, ou ainda a prestação de serviço por parte delas, por preço inferior ao de mercado;
+\nV - permitir ou facilitar a aquisição, permuta ou locação de bem ou serviço por preço superior ao de mercado;
+\nVI - realizar operação financeira sem observância das normas legais e regulamentares ou aceitar garantia insuficiente ou inidônea;
+\nVII - conceder benefício administrativo ou fiscal sem a observância das formalidades legais ou regulamentares aplicáveis a espécie;
+\nVIII - frustrar a licitude de processo licitatório ou dispensá-lo indevidamente;
+\nIX - ordenar ou permitir a realização de despesas não autorizadas em lei ou regulamento;
+\nX - agir negligentemente na arrecadação de tributo ou renda, bem como no que diz respeito a conservação do patrimônio público;
+\nXI - liberar verba pública sem a estrita observância das normas pertinentes ou influir de qualquer forma para a sua aplicação irregular;
+\nXII - permitir, facilitar ou concorrer para que terceiro se enriqueça ilicitamente;
+\nXIII - permitir que se utilize, em obra ou serviço particular, veículos, máquinas, equipamentos ou material de qualquer natureza, de propriedade ou a disposição de qualquer das entidades mencionadas no art. 1° desta lei, bem como o trabalho de servidor público, empregados ou terceiros contratados por essas entidades.
+\nXIV – celebrar contrato ou outro instrumento que tenha por objeto a prestação de serviços públicos por meio da gestão associada sem observar as formalidades previstas na lei;
+\nXV – celebrar contrato de rateio de consórcio público sem suficiente e prévia dotação orçamentária, ou sem observar as formalidades previstas na lei.
+\n
+\n
+\nDos Atos de Improbidade Administrativa que Atentam Contra os Princípios da Administração Pública
+\nArt. 11. Constitui ato de improbidade administrativa que atenta contra os princípios da administração pública qualquer ação ou omissão que viole os deveres de honestidade, imparcialidade, legalidade, e lealdade as instituições, e notadamente:
+\n
+\nI - praticar ato visando fim proibido em lei ou regulamento ou diverso daquele previsto, na regra de competência;
+\nII - retardar ou deixar de praticar, indevidamente, ato de ofício;
+\nIII - revelar fato ou circunstância de que tem ciência em razão das atribuições e que deva permanecer em segredo;
+\nIV - negar publicidade aos atos oficiais;
+\nV - frustrar a licitude de concurso público;
+\nVI - deixar de prestar contas quando esteja obrigado a fazê-lo;
+\nVII - revelar ou permitir que chegue ao conhecimento de terceiro, antes da respectiva divulgação oficial, teor de medida política ou econômica capaz de afetar o preço de mercadoria, bem ou serviço."
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_title_2"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/mude_id_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exemplo"
+                android:textSize="20sp"
+                android:textColor="@color/material_drawer_accent_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_subtitle"
+                />
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\nDos Atos de Improbidade Administrativa que Importam Enriquecimento Ilícito
+\n
+\nExemplo: Gestor da APAE que desviou em proveito próprio recursos repassados por meio de convênio (TJ-SP - APL: 00021017020118260213 SP 0002101-70.2011.8.26.0213, Relator: Amorim Cantuária, Data de Julgamento: 26/02/2013, 3ª Câmara de Direito Público, Data de Publicação: 01/03/2013)
+\nExemplo: Prefeitos que adulterou nota fiscal para inserir valor superior ao efetivamente gasto e constante do documento fiscal (TJ-SP - APL: 00026961820058260589 SP 0002696-18.2005.8.26.0589, Relator: Amorim Cantuária, Data de Julgamento: 12/03/2013, 3ª Câmara de Direito Público, Data de Publicação: 14/03/2013).
+\nExemplo: Funcionário dos Correios que se apropria de valores que se encontravam no caixa da empresa pública (TRF-5 - AC: 57305020114058400, Relator: Desembargador Federal Geraldo Apoliano, Data de Julgamento: 13/02/2014, Terceira Turma, Data de Publicação: 17/02/2014).
+\nExemplo: Pessoa nomeada para cargo comissionado auferindo a respectiva remuneração sem jamais ter exercido suas atribuições e sequer comparecido ao seu local de trabalho, onde deveria cumprir uma jornada de 08 (oito) horas diárias (TJ-MG - AC: 10024101977205001 MG, Relator: Teresa Cristina da Cunha Peixoto, Data de Julgamento: 27/02/2014, Câmaras Cíveis / 8ª CÂMARA CÍVEL, Data de Publicação: 13/03/2014).
+\nExemplo: Oficial de Justiça que recebe gratificação em dinheiro com o claro e vil propósito de cumprimento privilegiado de mandado judicial, em benefício dos réus (STJ - REsp: 1291401 RS 2011/0267125-8, Relator: Ministra ELIANA CALMON, Data de Julgamento: 19/09/2013, T2 - SEGUNDA TURMA, Data de Publicação: DJe 26/09/2013).
+\nExemplo: Vereadores que ignoraram o disposto no art. 29, VI, da Constituição Federal, e as regras da Lei de Responsabilidade Fiscal e elevaram seus subsídios em mais de 450% aos Vereadores e 575% ao Presidente da Câmara (TJ-SP - APL: 00319597620068260196 SP 0031959-76.2006.8.26.0196, Relator: Rebouças de Carvalho, Data de Julgamento: 18/12/2013, 9ª Câmara de Direito Público, Data de Publicação: 19/12/2013). Dos Atos de Improbidade Administrativa que Causam Prejuízo ao Erário
+\n
+\nExemplo: Prefeitos que contraiu obrigações nos últimos dois quadrimestres de determinado exercício financeiro, sem que houvesse, ao final de seu mandato, disponibilidade financeira para saldá-las (STJ - REsp: 1252341 SP 2011/0056486-5, Relator: Ministra ELIANA CALMON, Data de Julgamento: 05/09/2013, T2 - SEGUNDA TURMA, Data de Publicação: DJe 17/09/2013).
+\nExemplo: Prefeitos que firmam convênio com determinada igreja por intermédio do qual é cedido ao Município área de imóvel de sua propriedade para a instalação de salas de aula até a conclusão da construção de escola municipal. Já o Município concedeu os préstimos de servidor público para trabalhar na construção da sede da instituição religiosa (TJ-SP - APL: 91241063720078260000 SP 9124106-37.2007.8.26.0000, Relator: Aroldo Viotti, Data de Julgamento: 15/04/2014, 11ª Câmara de Direito Público, Data de Publicação: 13/05/2014).
+\nExemplo: Servidor público que acumulou indevidamente cargos públicos remunerados (TJ-SP - APL: 00002255520118260480 SP 0000225-55.2011.8.26.0480, Relator: Francisco Bianco, Data de Julgamento: 10/03/2014, 5ª Câmara de Direito Público, Data de Publicação: 18/03/2014).
+\nExemplo: Contratação de artistas musicais fora das hipótese de inexigibilidade de licitação causando prejuízo ao erário (TJ-DF - APC: 20080111606099 DF 0021612-44.2008.8.07.0001, Relator: ROMEU GONZAGA NEIVA, Data de Julgamento: 28/08/2013, 5ª Turma Cível, Data de Publicação: Publicado no DJE : 05/09/2013 . Pág.: 144).
+\nExemplo: Prefeitos que frustra a livre concorrência, com contratação, inclusive, de empresas possivelmente ‘fantasmas’ (TRF-1 - AC: 4452 MA 0004452-36.2006.4.01.3700, Relator: DESEMBARGADOR FEDERAL I'TALO FIORAVANTI SABO MENDES, Data de Julgamento: 11/12/2012, QUARTA TURMA, Data de Publicação: e-DJF1 p.76 de 06/03/2013).
+\nExemplo: Prefeito que dispensou indevidamente a necessária licitação para contração de empresas inexistentes, registrando, ainda, a não comprovação da execução dos serviços (TJ-PR 8608908 PR 860890-8 (Acórdão), Relator: Abraham Lincoln Calixto, Data de Julgamento: 19/06/2012, 4ª Câmara Cível). Dos Atos de Improbidade Administrativa que Atentam Contra os Princípios da Administração Pública
+\n
+\nExemplo: Prefeitos que contratam servidores sem concurso público (STJ - AgRg no AREsp: 135509 SP 2012/0005580-7, Relator: Ministra ELIANA CALMON, Data de Julgamento: 10/12/2013, T2 - SEGUNDA TURMA, Data de Publicação: DJe 18/12/2013).
+\nExemplo: Prefeitos responsáveis pela prática de assédio moral prejudicando servidora pública (STJ - REsp: 1286466 RS 2011/0058560-5, Relator: Ministra ELIANA CALMON, Data de Julgamento: 03/09/2013, T2 - SEGUNDA TURMA, Data de Publicação: DJe 18/09/2013).
+\nExemplo: Professor de escola pública que pratica atos obscenos e atentado violento ao puder contra alunas da escola municipal, crianças com seis e sete anos de idade, aproveitando-se de sua função de professor, enquanto ministrava aula (STJ - REsp: 1219915 MG 2010/0194046-1, Relator: Ministra ELIANA CALMON, Data de Julgamento: 19/11/2013, T2 - SEGUNDA TURMA, Data de Publicação: DJe 29/11/2013).
+\nExemplo: Prefeitos que nomeiam parentes para ocupar cargos em comissão (STJ - AgRg no REsp: 1386255 PB 2013/0172703-3, Relator: Ministro HUMBERTO MARTINS, Data de Julgamento: 24/04/2014, T2 - SEGUNDA TURMA, Data de Publicação: DJe 02/05/2014).
+\nExemplo: Prefeitos que não prestou contas de recursos repassados ao Município (TRF-1 - AC: 200932010003095 AM 2009.32.01.000309-5, Relator: DESEMBARGADOR FEDERAL CATÃO ALVES, Data de Julgamento: 10/09/2013, TERCEIRA TURMA, Data de Publicação: e-DJF1 p.312 de 20/09/2013)
+\nExemplo: Prefeitos que de forma reiterada efetiva contratações irregulares, sem o necessário concurso público, propiciando prestígio político (TJ-MG - AC: 10153040346972002 MG , Relator: Edilson Fernandes, Data de Julgamento: 22/10/2013, Câmaras Cíveis / 6ª CÂMARA CÍVEL, Data de Publicação: 01/11/2013)."
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_title_1"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

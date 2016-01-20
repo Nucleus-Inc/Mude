@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:fillViewport="false"
+    android:id="@+id/frag_about">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:layout_alignBottom="@+id/divider"
+        android:layout_margin="5dp"
+        android:background="@color/card_background"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/mude_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modificação ou Alteração Não Autorizada de Sistema de Informações"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/mude_id_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conceito"
+                android:textSize="20sp"
+                android:textColor="@color/material_drawer_accent_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_title"
+                />
+
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Incluído pela Lei nº 9.983, de 2000)
+\nArt. 313-B. Modificar ou alterar, o funcionário, sistema de informações ou programa de informática sem autorização ou solicitação de autoridade competente: (Incluído pela Lei nº 9.983, de 2000)
+\nPena – detenção, de 3 (três) meses a 2 (dois) anos, e multa. (Incluído pela Lei nº 9.983, de 2000)
+\n
+\nParágrafo único. As penas são aumentadas de um terço até a metade se da modificação ou alteração resulta dano para a Administração Pública ou para o administrado.(Incluído pela Lei nº 9.983, de 2000)"
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_title_2"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/mude_id_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exemplo"
+                android:textSize="20sp"
+                android:textColor="@color/material_drawer_accent_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_subtitle"
+                />
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Funcionário da Caixa Econômica Federal que, sem autorização, exclui, indevidamente, de sistema informatizado da referida empresa pública, restrições em conta corrente mantida na instituição financeira (TRF-4 - ACR: 128 SC 2007.72.06.000128-9, Relator: Revisor, Data de Julgamento: 09/12/2009, OITAVA TURMA, Data de Publicação: D.E. 13/01/2010)."
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_title_1"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

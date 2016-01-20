@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:fillViewport="false"
+    android:id="@+id/frag_about">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:layout_alignBottom="@+id/divider"
+        android:layout_margin="5dp"
+        android:background="@color/card_background"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/mude_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peculato"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/mude_id_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conceito"
+                android:textSize="20sp"
+                android:textColor="@color/material_drawer_accent_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_title"
+                />
+
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\nArt. 312 - Apropriar-se o funcionário público de dinheiro, valor ou qualquer outro bem móvel, público ou particular, de que tem a posse em razão do cargo, ou desviá-lo, em proveito próprio ou alheio:
+\nPena - reclusão, de dois a doze anos, e multa.
+\n
+\n§ 1º - Aplica-se a mesma pena, se o funcionário público, embora não tendo a posse do dinheiro, valor ou bem, o subtrai, ou concorre para que seja subtraído, em proveito próprio ou alheio, valendo-se de facilidade que lhe proporciona a qualidade de funcionário.
+\nPeculato culposo
+\n§ 2º - Se o funcionário concorre culposamente para o crime de outrem:
+\nPena - detenção, de três meses a um ano.
+\n
+\n§ 3º - No caso do parágrafo anterior, a reparação do dano, se precede a sentença irrecorrível, extingue a punibilidade; se lhe é posterior, reduz de metade a pena imposta."
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_title_2"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/mude_id_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exemplo"
+                android:textSize="20sp"
+                android:textColor="@color/material_drawer_accent_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_subtitle"
+                />
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exemplo: Vereador que utilizava parte dos vencimentos de funcionários investidos em cargos comissionados, alguns que nem sequer trabalhavam de fato, que eram para ele repassados e posteriormente utilizados no pagamento de outras pessoas que também prestavam serviços em sua assessoria, porém sem estarem investidas em cargos públicos. (STJ - REsp: 1244377 PR 2011/0050761-5, Relator: Ministro SEBASTIÃO REIS JÚNIOR, Data de Julgamento: 03/04/2014, T6 - SEXTA TURMA, Data de Publicação: DJe 15/04/2014)
+\n
+\nExemplo: Funcionário público que, valendo-se de sua função e sabendo que determinados bens públicos, leia-se tratores, encontravam-se desvigiados, subtraiu combustível dos tanques dos referidos veículos (TJ-SP - APL: 00185242120118260047 SP 0018524-21.2011.8.26.0047, Relator: Otávio de Almeida Toledo, Data de Julgamento: 25/03/2014, 16ª Câmara de Direito Criminal, Data de Publicação: 26/03/2014).
+\nPeculato culposo
+\nExemplo: Funcionário público que cede sua senha pessoal para que outros da mesma repartição tenha acesso a determinado sistema, ensejando a alteração de valores unitários e pagamentos a maior sem o seu conhecimento e consentimento (TJ-MG - APR: 10024096934419001 MG , Relator: Furtado de Mendonça, Data de Julgamento: 23/04/2013, Câmaras Criminais / 6ª CÂMARA CRIMINAL, Data de Publicação: 03/05/2013)."
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_title_1"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

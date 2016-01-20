@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:fillViewport="false"
+    android:id="@+id/frag_about">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:layout_alignBottom="@+id/divider"
+        android:layout_margin="5dp"
+        android:background="@color/card_background"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/mude_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Advocacia Administrativa"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/mude_id_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conceito"
+                android:textSize="20sp"
+                android:textColor="@color/material_drawer_accent_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_title"
+                />
+
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Art. 321 - Patrocinar, direta ou indiretamente, interesse privado perante a administração pública, valendo-se da qualidade de funcionário: Pena - detenção, de um a três meses, ou multa. Parágrafo único - Se o interesse é ilegítimo: Pena - detenção, de três meses a um ano, além da multa."
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_title_2"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/mude_id_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exemplo"
+                android:textSize="20sp"
+                android:textColor="@color/material_drawer_accent_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_subtitle"
+                />
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Funcionário público, membro de comissão de sindicância administrativa, que patrocina interesse privado perante a administração pública, valendo-se de sua condição de servidor público da instituição (TRF-1 - ACR: 1998 AP 0001998-69.2008.4.01.3100, Relator: DESEMBARGADOR FEDERAL HILTON QUEIROZ, Data de Julgamento: 06/05/2013, QUARTA TURMA)."
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_title_1"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

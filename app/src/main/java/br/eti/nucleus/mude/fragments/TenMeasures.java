@@ -35,7 +35,7 @@ public class TenMeasures extends Fragment implements View.OnClickListener{
     }
 
     private void set_title(){
-        MainActivity.myToolbar.setTitle(R.string.tenMeasures);
+        MainActivity.myToolbar.setTitle("Mude");
     }
 
     private void set_menu_button(){

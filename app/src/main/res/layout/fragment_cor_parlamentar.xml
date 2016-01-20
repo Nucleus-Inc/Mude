@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:fillViewport="false"
+    android:id="@+id/frag_about">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:layout_alignBottom="@+id/divider"
+        android:layout_margin="5dp"
+        android:background="@color/card_background"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/mude_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crimes de responsabilidade de prefeitos e vereadores"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/mude_id_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conceito"
+                android:textSize="20sp"
+                android:textColor="@color/material_drawer_accent_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_title"
+                />
+
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Art. 1º São crimes de responsabilidade dos Prefeitos Municipais, sujeitos ao julgamento do Poder Judiciário, independentemente do pronunciamento da Câmara dos Vereadores:
+\nI - apropriar-se de bens ou rendas públicas, ou desviá-los em proveito próprio ou alheio;
+\n
+\nII - utilizar-se, indevidamente, em proveito próprio ou alheio, de bens, rendas ou serviços públicos;
+\nExemplo: Prefeitos Municipais que se utiliza de cheque da Prefeitura Municipal com o intuito de cobrir gastos pessoais (TJ-AL - Crimes contra o Patrimônio: 90059511399998020000 AL 9005951-13.9999.8.02.0000, Relator: Des. Edivaldo Bandeira Rios, Tribunal Pleno, Data de Publicação: 12/06/2012).
+\n
+\nIII - desviar, ou aplicar indevidamente, rendas ou verbas públicas;
+\nExemplo: Prefeitos municipais que aplicou recursos destinados ao PETI – Programa de Erradicação do Trabalho Infantil no pagamento de servidores públicos (TRF-5, ACR 5692/PE (2006.83.03.000194-0), Relator: Desembargador Federal Vladimir Carvalho, Data de Julgamento: 02/10/2008, Terceira Turma)
+\n
+\nIV - empregar subvenções, auxílios, empréstimos ou recursos de qualquer natureza, em desacordo com os planos ou programas a que se destinam;
+\nExemplo: Prefeitos municipais que aplicou recursos de convênio para a construção de açude público na construção de passagens molhadas (STF - AP: 409 CE , Relator: Min. AYRES BRITTO, Data de Julgamento: 13/05/2010, Tribunal Pleno, Data de Publicação: DJe-120 DIVULG 30-06-2010 PUBLIC 01-07-2010 EMENT VOL-02408-01 PP-00011)
+\n
+\nV - ordenar ou efetuar despesas não autorizadas por lei, ou realizá-Ias em desacordo com as normas financeiras pertinentes;
+\nExemplo: Prefeitos que realiza/autoriza o repasse de recursos a empresa contratada sem que tivesse tido qualquer contraprestação de serviços (TRF-3 - ACR: 37369 MS 97.03.037369-0, Relator: JUIZ CONVOCADO SILVIO GEMAQUE, Data de Julgamento: 03/08/2010, PRIMEIRA TURMA).
+\n
+\nVI - deixar de prestar contas anuais da administração financeira do Município a Câmara de Vereadores, ou ao órgão que a Constituição do Estado indicar, nos prazos e condições estabelecidos;
+\nExemplo: Prefeitos que ignorou dever legal de disponibilizar a Câmara de Vereadores uma via da prestação de contas anuais encaminhada a Corte de Contas, observada semelhança no que tange ao prazo e a forma (TJ-MA - DEN: 236462006 MA , Relator: MÁRIO LIMA REIS, Data de Julgamento: 22/08/2008, SAO DOMINGOS DO MARANHAO).
+\n
+\nVII - Deixar de prestar contas, no devido tempo, ao órgão competente, da aplicação de recursos, empréstimos subvenções ou auxílios internos ou externos, recebidos a qualquer titulo;
+\nExemplo: Prefeitos que deixa de prestar contas da aplicação dos recursos recebidos (TRF-1 - ACR: 7718 PA 0007718-76.2007.4.01.3900, Relator: DESEMBARGADOR FEDERAL MÁRIO CÉSAR RIBEIRO, Data de Julgamento: 09/08/2010, QUARTA TURMA, Data de Publicação: e-DJF1 p.75 de 24/08/2010)
+\n
+\nVIII - Contrair empréstimo, emitir apólices, ou obrigar o Município por títulos de crédito, sem autorização da Câmara, ou em desacordo com a lei;
+\nExemplo: Prefeitos que contraiu empréstimo para o Município sem autorização da Câmara Municipal dando como garantia um cheque da própria Prefeitura (TJ-PR - ACR: 2118981 PR Apelação Crime - 0211898-1, Relator: Idevan Lopes, Data de Julgamento: 22/05/2003, Segunda Câmara Criminal (extinto TA), Data de Publicação: 13/06/2003 DJ: 6390).
+\n
+\nIX - Conceder empréstimo, auxílios ou subvenções sem autorização da Câmara, ou em desacordo com a lei;
+\nExemplo: Prefeitos que concedeu subvenções em favor de determinada agremiação esportiva sem autorização da Câmara Municipal e em total desacordo com a legislação em vigor, visto que suplementou dotação orçamentária sem a prévia exposição justificativa e autorizou o desvio de dinheiro municipal para quem não havia sido contemplado com dotação orçamentária (TJ-PR - APN: 1391331 PR 0139133-1, Relator: Mendonça de Anunciação, Data de Julgamento: 18/07/2008, Órgão Especial, Data de Publicação: DJ: 7669)
+\n
+\nX - Alienar ou onerar bens imóveis, ou rendas municipais, sem autorização da Câmara, ou em desacordo com a lei;
+\nExemplo: Prefeitos que alienou bens imóveis municipais, sem autorização da Câmara Municipal e em desacordo com o disposto na Lei n.º 8.666/93, bem como no Código Civil e na Lei Orgânica Municipal (TJ-RJ - APL: 00007228320068190013 RJ 0000722-83.2006.8.19.0013, Relator: DES. MARIA SANDRA KAYAT DIREITO, Data de Julgamento: 01/04/2014, PRIMEIRA CAMARA CRIMINAL, Data de Publicação: 08/04/2014 17:10).
+\n
+\nXI - Adquirir bens, ou realizar serviços e obras, sem concorrência ou coleta de preços, nos casos exigidos em lei;
+\n
+\nXII - Antecipar ou inverter a ordem de pagamento a credores do Município, sem vantagem para o erário;
+\n
+\nXIII - Nomear, admitir ou designar servidor, contra expressa disposição de lei;
+\nExemplo: Prefeitos municipais que nomeia servidor efetivo para exercer cargo em comissão cumulando indevidamente os vencimentos de ambos os cargos (TJ-PR, Relator: Telmo Cherem, Data de Julgamento: 16/05/2002, 2ª Câmara Criminal)"
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_title_2"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XIV - Negar execução a lei federal, estadual ou municipal, ou deixar de cumprir ordem judicial, sem dar o motivo da recusa ou da impossibilidade, por escrito, a autoridade competente;
+\nExemplo: Prefeitos que não adotou as medidas necessárias ao cumprimento de ordem judicial, consistente na adoção das providências para modificar as instalações e fornecer equipamentos suficientes para o funcionamento do conselhou tutelar (TJ-ES - APN: 100060040357 ES 100060040357, Relator: SÉRGIO BIZZOTTO PESSOA DE MENDONÇA, Data de Julgamento: 27/08/2008, PRIMEIRA CÂMARA CRIMINAL, Data de Publicação: 01/10/2008).
+\n
+\nXV - Deixar de fornecer certidões de atos ou contratos municipais, dentro do prazo estabelecido em lei.
+\nExemplo: Prefeitos que deixou de encaminhar informações solicitadas pela Câmara Municipal de empresas vencedoras de processos licitatórios, desrespeitando a Constituição Federal de 1988, artigo 5º, inciso XXXIII, bem assim a Lei Orgânica Municipal (TJ-PR - APN: 919866 PR Ação Penal (Cam) - 0091986-6, Relator: José Mauricio Pinto de Almeida, Data de Julgamento: 11/12/2003, 2ª Câmara Criminal, Data de Publicação: 08/03/2004 DJ: 6574).
+\n
+\nXVI – deixar de ordenar a redução do montante da dívida consolidada, nos prazos estabelecidos em lei, quando o montante ultrapassar o valor resultante da aplicação do limite máximo fixado pelo Senado Federal;
+\n
+\nXVII – ordenar ou autorizar a abertura de crédito em desacordo com os limites estabelecidos pelo Senado Federal, sem fundamento na lei orçamentária ou na de crédito adicional ou com inobservância de prescrição legal;
+\nExemplo: Prefeitos que determinou a abertura de crédito suplementar sem base normativa (TJ-BA - AP: 00176937020098050000 BA 0017693-70.2009.8.05.0000, Relator: Nágila Maria Sales Brito, Data de Julgamento: 23/08/2012, Segunda Câmara Criminal, Data de Publicação: 17/11/2012).
+\n
+\nXVIII – deixar de promover ou de ordenar, na forma da lei, o cancelamento, a amortização ou a constituição de reserva para anular os efeitos de operação de crédito realizada com inobservância de limite, condição ou montante estabelecido em lei;
+\n
+\nXIX – deixar de promover ou de ordenar a liquidação integral de operação de crédito por antecipação de receita orçamentária, inclusive os respectivos juros e demais encargos, até o encerramento do exercício financeiro;
+\n
+\nXX – ordenar ou autorizar, em desacordo com a lei, a realização de operação de crédito com qualquer um dos demais entes da Federação, inclusive suas entidades da administração indireta, ainda que na forma de novação, refinanciamento ou postergação de dívida contraída anteriormente;
+\n
+\nXXI – captar recursos a título de antecipação de receita de tributo ou contribuição cujo fato gerador ainda não tenha ocorrido;
+\n
+\nXXII – ordenar ou autorizar a destinação de recursos provenientes da emissão de títulos para finalidade diversa da prevista na lei que a autorizou;
+\n
+\nXXIII – realizar ou receber transferência voluntária em desacordo com limite ou condição estabelecida em lei.
+\n§1º Os crimes definidos neste artigo são de ação pública, punidos os dos itens I e II, com a pena de reclusão, de dois a doze anos, e os demais, com a pena de detenção, de três meses a três anos.
+\n
+\n§ 2º A condenação definitiva em qualquer dos crimes definidos neste artigo, acarreta a perda de cargo e a inabilitação, pelo prazo de cinco anos, para o exercício de cargo ou função pública, eletivo ou de nomeação, sem prejuízo da reparação civil do dano causado ao patrimônio público ou particular."
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_subtitle"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/mude_id_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exemplo"
+                android:textSize="20sp"
+                android:textColor="@color/material_drawer_accent_dark"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mude_id_subtitle_2"
+                />
+            <TextView
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/mude_id_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I:
+\nExemplo: Prefeitos Municipais que transfere recursos do Fundo Municipal de Saúde para conta de particular sem qualquer respaldo legal (TJ-PR - ACR: 5525015 PR 0552501-5, Relator: Noeval de Quadros, Data de Julgamento: 06/05/2009, 2ª Câmara Criminal, Data de Publicação: DJ: 143).
+\nIII:
+\nExemplo: Prefeitos municipais que aplicou recursos destinados ao PETI – Programa de Erradicação do Trabalho Infantil no pagamento de servidores públicos (TRF-5, ACR 5692/PE (2006.83.03.000194-0), Relator: Desembargador Federal Vladimir Carvalho, Data de Julgamento: 02/10/2008, Terceira Turma)
+\nIV:
+\nExemplo: Prefeitos municipais que aplicou recursos de convênio para a construção de açude público na construção de passagens molhadas (STF - AP: 409 CE , Relator: Min. AYRES BRITTO, Data de Julgamento: 13/05/2010, Tribunal Pleno, Data de Publicação: DJe-120 DIVULG 30-06-2010 PUBLIC 01-07-2010 EMENT VOL-02408-01 PP-00011)
+\nV:
+\nExemplo: Prefeitos que realiza/autoriza o repasse de recursos a empresa contratada sem que tivesse tido qualquer contraprestação de serviços (TRF-3 - ACR: 37369 MS 97.03.037369-0, Relator: JUIZ CONVOCADO SILVIO GEMAQUE, Data de Julgamento: 03/08/2010, PRIMEIRA TURMA).
+\nVI:
+\nExemplo: Prefeitos que ignorou dever legal de disponibilizar a Câmara de Vereadores uma via da prestação de contas anuais encaminhada a Corte de Contas, observada semelhança no que tange ao prazo e a forma (TJ-MA - DEN: 236462006 MA , Relator: MÁRIO LIMA REIS, Data de Julgamento: 22/08/2008, SAO DOMINGOS DO MARANHAO).
+\nVII:
+\nExemplo: Prefeitos que deixa de prestar contas da aplicação dos recursos recebidos (TRF-1 - ACR: 7718 PA 0007718-76.2007.4.01.3900, Relator: DESEMBARGADOR FEDERAL MÁRIO CÉSAR RIBEIRO, Data de Julgamento: 09/08/2010, QUARTA TURMA, Data de Publicação: e-DJF1 p.75 de 24/08/2010)
+\nVIII:
+\nExemplo: Prefeitos que contraiu empréstimo para o Município sem autorização da Câmara Municipal dando como garantia um cheque da própria Prefeitura (TJ-PR - ACR: 2118981 PR Apelação Crime - 0211898-1, Relator: Idevan Lopes, Data de Julgamento: 22/05/2003, Segunda Câmara Criminal (extinto TA), Data de Publicação: 13/06/2003 DJ: 6390).
+\nIX:
+\nExemplo: Prefeitos que concedeu subvenções em favor de determinada agremiação esportiva sem autorização da Câmara Municipal e em total desacordo com a legislação em vigor, visto que suplementou dotação orçamentária sem a prévia exposição justificativa e autorizou o desvio de dinheiro municipal para quem não havia sido contemplado com dotação orçamentária (TJ-PR - APN: 1391331 PR 0139133-1, Relator: Mendonça de Anunciação, Data de Julgamento: 18/07/2008, Órgão Especial, Data de Publicação: DJ: 7669)
+\nX:
+\nExemplo: Prefeitos que alienou bens imóveis municipais, sem autorização da Câmara Municipal e em desacordo com o disposto na Lei n.º 8.666/93, bem como no Código Civil e na Lei Orgânica Municipal (TJ-RJ - APL: 00007228320068190013 RJ 0000722-83.2006.8.19.0013, Relator: DES. MARIA SANDRA KAYAT DIREITO, Data de Julgamento: 01/04/2014, PRIMEIRA CAMARA CRIMINAL, Data de Publicação: 08/04/2014 17:10).
+\nXIII:
+\nExemplo: Prefeitos municipais que nomeia servidor efetivo para exercer cargo em comissão cumulando indevidamente os vencimentos de ambos os cargos (TJ-PR, Relator: Telmo Cherem, Data de Julgamento: 16/05/2002, 2ª Câmara Criminal)
+\nXIV:
+\nExemplo: Prefeitos que não adotou as medidas necessárias ao cumprimento de ordem judicial, consistente na adoção das providências para modificar as instalações e fornecer equipamentos suficientes para o funcionamento do conselhou tutelar (TJ-ES - APN: 100060040357 ES 100060040357, Relator: SÉRGIO BIZZOTTO PESSOA DE MENDONÇA, Data de Julgamento: 27/08/2008, PRIMEIRA CÂMARA CRIMINAL, Data de Publicação: 01/10/2008).
+\nXV:
+\nExemplo: Prefeitos que deixou de encaminhar informações solicitadas pela Câmara Municipal de empresas vencedoras de processos licitatórios, desrespeitando a Constituição Federal de 1988, artigo 5º, inciso XXXIII, bem assim a Lei Orgânica Municipal (TJ-PR - APN: 919866 PR Ação Penal (Cam) - 0091986-6, Relator: José Mauricio Pinto de Almeida, Data de Julgamento: 11/12/2003, 2ª Câmara Criminal, Data de Publicação: 08/03/2004 DJ: 6574).
+\nXVII:
+\nExemplo: Prefeitos que determinou a abertura de crédito suplementar sem base normativa (TJ-BA - AP: 00176937020098050000 BA 0017693-70.2009.8.05.0000, Relator: Nágila Maria Sales Brito, Data de Julgamento: 23/08/2012, Segunda Câmara Criminal, Data de Publicação: 17/11/2012)."
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/mude_id_title_1"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</ScrollView>

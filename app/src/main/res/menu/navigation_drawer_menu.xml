@@ -6,7 +6,7 @@
         <item android:checked="true"
             android:id="@+id/navigation_drawer_idea"
             android:icon="@drawable/idea"
-            android:title="@string/tenMeasures"
+            android:title="Mude"
             />
 
         <item android:id="@+id/navigation_drawer_fraud"

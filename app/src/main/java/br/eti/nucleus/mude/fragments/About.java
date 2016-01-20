@@ -22,6 +22,7 @@ public class About extends Fragment implements View.OnClickListener{
     LinearLayout mpf;
     LinearLayout ifc;
     LinearLayout materialDrawer;
+    LinearLayout nucleus;
 
     private void listen_clickeds() {
         viewPage = (LinearLayout) getActivity().findViewById(R.id.mude_id_app_layout);
@@ -36,9 +37,13 @@ public class About extends Fragment implements View.OnClickListener{
                     ifc = (LinearLayout) getActivity().findViewById(R.id.mude_id_app_layout_4);
                     if(ifc!=null){
                         ifc.setOnClickListener(this);
-                        materialDrawer = (LinearLayout) getActivity().findViewById(R.id.mude_id_app_layout_5);
-                        if(materialDrawer!=null)
+                        materialDrawer = (LinearLayout) getActivity().findViewById(R.id.mude_id_app_layout_6);
+                        if(materialDrawer!=null) {
                             materialDrawer.setOnClickListener(this);
+                            nucleus = (LinearLayout) getActivity().findViewById(R.id.mude_id_app_layout_5);
+                            if(nucleus!=null)
+                                nucleus.setOnClickListener(this);
+                        }
                     }
                 }
             }
@@ -46,7 +51,7 @@ public class About extends Fragment implements View.OnClickListener{
     }
 
     private void set_title(){
-        MainActivity.myToolbar.setTitle("Corrupção");
+        MainActivity.myToolbar.setTitle("Sobre");
     }
 
     private void set_menu_button(){
@@ -98,6 +103,9 @@ public class About extends Fragment implements View.OnClickListener{
                 url = "http://www.ifce.edu.br/";
                 break;
             case R.id.mude_id_app_layout_5:
+                url = "http://nucleus.eti.br";
+                break;
+            case R.id.mude_id_app_layout_6:
                url = "http://mikepenz.github.io/MaterialDrawer/";
                 break;
         }

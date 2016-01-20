@@ -165,10 +165,10 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/bibliotecas"
+                android:id="@+id/desenvolvedores"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BIBLIOTECAS"
+                android:text="DESENVOLVEDORES"
                 android:textSize="16sp"
                 android:layout_below="@+id/mude_id_app_layout_4"
                 android:layout_marginTop="15dp"
@@ -177,6 +177,42 @@
 
             <LinearLayout
                 android:id="@+id/mude_id_app_layout_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/desenvolvedores"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_mobile_android_dev"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nucleus Technology"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/material_drawer_primary_dark"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bibliotecas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BIBLIOTECAS"
+                android:textSize="16sp"
+                android:layout_below="@+id/mude_id_app_layout_5"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/mude_id_app_layout_6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"

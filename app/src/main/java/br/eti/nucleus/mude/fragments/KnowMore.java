@@ -75,7 +75,7 @@ public class KnowMore extends Fragment implements View.OnClickListener{
     }
 
     private void set_menu_button(){
-        MainActivity.actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_white_24dp);
+        MainActivity.actionBar.setHomeAsUpIndicator(R.drawable.ic_arrow_back_white_24dp);
     }
 
     @Nullable
