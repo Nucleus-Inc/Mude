@@ -111,7 +111,7 @@ public class CorruptionTypes extends Fragment implements View.OnClickListener{
     }
 
     private void set_title(){
-        MainActivity.myToolbar.setTitle("Tipos de Corrupção");
+        MainActivity.myToolbar.setTitle("Corrupção");
     }
 
     private void set_menu_button(){
