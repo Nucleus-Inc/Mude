@@ -1,21 +1,4 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity"
-    >
-
-    <!-- Settings, should always be in the overflow -->
-    <!--<item
-        android:id="@+id/action_settings"
-        android:icon="@drawable/ic_more_vert_white_24dp"
-        android:title="@string/action_settings"
-        app:showAsAction="always">
-        <menu>
-            <item
-                android:id="@+id/local_path"
-                android:icon="@drawable/ic_folder_48dp"
-                android:title="@string/path_name"
-                app:showAsAction="always" />
-        </menu>
-    </item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 </menu>

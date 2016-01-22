@@ -32,8 +32,22 @@
                 android:paddingTop="10dp"
                 />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/mpf_operation_subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecione um dos ícones abaixo para conhecer detalhes dos tipos de corrupção."
+                android:textColor="@color/material_drawer_primary_icon"
                 android:layout_below="@+id/corruption_type_title"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_below="@+id/mpf_operation_subtitle2"
                 android:id="@+id/layout_corTraficoInfluencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

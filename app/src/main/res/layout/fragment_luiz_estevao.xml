@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="false"
+    android:id="@+id/frag_about">
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:background="@color/card_background"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/carlinhos_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luiz Estevão"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_accent_light"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <FrameLayout
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:id="@+id/youtube_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+                android:padding="10dp"
+                android:layout_below="@+id/carlinhos_id_title"
+                />
+
+            <TextView
+                android:id="@+id/carlinhos_id_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O que é?"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/youtube_layout"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                />
+            <TextView
+                android:id="@+id/carlinhos_id_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O desvio de verbas públicas durante a construção do Fórum Trabalhista de São Paulo foi objeto de apuração, por meio de Inquérito Civil Público, pelo Ministério Público Federal em São Paulo.
+\nAs investigações tiveram início no final de 1997 e a Ação Civil Pública foi ajuizada em agosto de 1998, quando já se havia apurado um alto valor das verbas públicas desviadas em favor de terceiros, notadamente o ex-juiz Nicolau dos Santos Neto, Fábio Monteiro de Barros Filho e José Eduardo Ferraz, donos e sócios da empresa Incal Inc. e Ikal Construções.
+\nAs liminares pleiteadas pelo MPF foram integralmente deferidas, tendo sido determinado o bloqueio dos bens dos réus, vigente até hoje, quebra do sigilo da conta bancária que recebia os recursos da União para a construção do Fórum Trabalhista e o afastamento do então juiz Nicolau dos Santos Neto do cargo de Presidente da Comissão de Obras para a construção do Fórum Trabalhista.
+\nEm 1999, após o início do trabalhos da CPI do Judiciário veio à tona a participação do então Senador Luiz Estevão no esquema criminoso, tendo sido descoberto um contrato de gaveta que revelou que 90% das cotas da empresa Incal, recebedora dos recursos públicos, fora transferida, após o término da licitação, ao então Senador Luiz Estevão, fatos que deram ensejo ao ajuizamento de Ação Civil Pública, também pelo MPF em São Paulo, em face de Luiz Estevão, sua mulher e seu grupo empresarial. Foi obtido o bloqueio dos bens de todos os envolvidos, vigente até hoje.
+"
+
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/carlinhos_id_subtitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:paddingBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</ScrollView>

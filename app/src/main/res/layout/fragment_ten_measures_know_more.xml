@@ -45,6 +45,20 @@
                 android:padding="5dp"
                 />
 
+            <TextView
+                android:id="@+id/mpf_operation_subtitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecione um dos ícones abaixo para conhecer detalhes de uma das 10 medidas contra a corrupção."
+                android:textColor="@color/material_drawer_primary_icon"
+                android:layout_below="@+id/know_more_subtitle"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                />
+
             <LinearLayout
                 android:layout_below="@+id/know_more_refund"
                 android:id="@+id/know_more_handcuffs"
@@ -73,7 +87,7 @@
 
             <LinearLayout
 
-                android:layout_below="@+id/know_more_subtitle"
+                android:layout_below="@+id/mpf_operation_subtitle2"
                 android:id="@+id/know_more_refund"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

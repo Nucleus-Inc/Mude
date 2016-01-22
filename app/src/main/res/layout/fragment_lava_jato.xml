@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="false"
+    android:id="@+id/frag_about">
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:background="@color/card_background"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/bancosantos_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lava Jato"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_accent_light"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/bancosantos_id_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O que é?"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/bancosantos_id_title"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                />
+            <TextView
+                android:id="@+id/bancosantos_id_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Operação Lava-Jato foi deflagrada no dia 17 de março deste ano pela Polícia Federal. O objetivo foi desarticular um esquema de evasão de divisas, lavagem de dinheiro e outros crimes financeiros capitaneados por conhecidos doleiros. Em virtude das medidas de busca e apreensão iniciais, mais de 80 mil documentos estão sendo analisados. Acordos de colaboração celebrados pelo Ministério Público levaram à expansão e ao aprofundamento das investigações, conduzindo a um total de 7 novas fases ou operações, resultando na possibilidade de investigar e punir executivos da Petrobras, executivos de grandes empreiteiras e operadores que praticaram crimes como formação de cartel, de organização criminosa, de corrupção e de lavagem de dinheiro."
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/bancosantos_id_subtitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:paddingBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</ScrollView>

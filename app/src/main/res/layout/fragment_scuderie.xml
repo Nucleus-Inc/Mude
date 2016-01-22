@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="false"
+    android:id="@+id/frag_about">
+    <android.support.v7.widget.CardView
+        android:id="@+id/start_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cardview:cardElevation="4dp"
+        cardview:cardCornerRadius="5dp"
+        android:background="@color/card_background"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/bancosantos_id_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scuderie Le Cocq"
+                android:textSize="30sp"
+                android:textColor="@color/material_drawer_accent_light"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/bancosantos_id_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O que é?"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/bancosantos_id_title"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                />
+            <TextView
+                android:id="@+id/bancosantos_id_subtitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Na década de 1960, policiais no Rio de Janeiro começaram a se reunir para “fazer Justiça a qualquer preço”. O motivo foi a morte de um companheiro, o inspetor Milton Le Cocq (origem do nome do grupo), durante tiroteio com assaltantes.
+\nA entidade agia como personificação jurídica do crime organizado e como quartel de grupos paramilitares de extermínio de supostos delinquentes. A Scuderie Le Cocq assumia abertamente uma “origem policial” e intervinha na apuração dos crimes cometidos por seus membros, que se chamavam uns aos outros de “irmãozinhos”, para assegurar a eles a impunidade.
+\nUma das marcas do grupo era a exposição, em praça pública, dos corpos de suas vítimas, chancelados com a imagem da caveira e dos ossos cruzados. A entidade foi criada oficialmente em 1984.
+                "
+                android:textSize="14sp"
+                android:gravity="left"
+                android:textColor="@color/material_drawer_primary_dark"
+                android:layout_below="@+id/bancosantos_id_subtitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:paddingBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</ScrollView>

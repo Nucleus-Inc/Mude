@@ -1,5 +1,6 @@
 package br.eti.nucleus.mude.activitys;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.design.widget.NavigationView;
@@ -13,10 +14,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import br.eti.nucleus.mude.R;
 import br.eti.nucleus.mude.fragments.About;
+import br.eti.nucleus.mude.fragments.CarlinhosCachoeira;
 import br.eti.nucleus.mude.fragments.Corruption;
 import br.eti.nucleus.mude.fragments.Downloads;
+import br.eti.nucleus.mude.fragments.LuizEstevao;
+import br.eti.nucleus.mude.fragments.Mensalao;
 import br.eti.nucleus.mude.fragments.Multimedia;
 import br.eti.nucleus.mude.fragments.News;
+import br.eti.nucleus.mude.fragments.Sanguessuga;
 import br.eti.nucleus.mude.fragments.TenMeasures;
 import br.eti.nucleus.mude.modules.MyToolbar;
 
@@ -147,4 +152,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        if(CarlinhosCachoeira.fullscreen) {
+            CarlinhosCachoeira.player.setFullscreen(false);
+        }else{
+            if(LuizEstevao.fullscreen){
+                LuizEstevao.player.setFullscreen(false);
+            }else {
+                if (Mensalao.fullscreen) {
+                    Mensalao.player.setFullscreen(false);
+                } else{
+                    if (Sanguessuga.fullscreen) {
+                        Sanguessuga.player.setFullscreen(false);
+                    } else
+                        super.onBackPressed();
+                }
+
+            }
+        }
+
+    }
 }
