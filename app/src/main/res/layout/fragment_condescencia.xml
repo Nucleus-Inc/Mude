@@ -54,7 +54,9 @@
                 android:id="@+id/mude_id_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Art. 320 - Deixar o funcionário, por indulgência, de responsabilizar subordinado que cometeu infração no exercício do cargo ou, quando lhe falte competência, não levar o fato ao conhecimento da autoridade competente: Pena - detenção, de quinze dias a um mês, ou multa"
+                android:text="Art. 320 - Deixar o funcionário, por indulgência, de responsabilizar subordinado que cometeu infração no exercício do cargo ou, quando lhe falte competência, não levar o fato ao conhecimento da autoridade competente:
+    \nPena - detenção, de quinze dias a um mês, ou multa
+    "
                 android:textSize="14sp"
                 android:gravity="left"
                 android:textColor="@color/material_drawer_primary_dark"

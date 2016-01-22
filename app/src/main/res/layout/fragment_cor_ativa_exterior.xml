@@ -54,7 +54,10 @@
                 android:id="@+id/mude_id_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Art. 337-B. Prometer, oferecer ou dar, direta ou indiretamente, vantagem indevida a funcionário público estrangeiro, ou a terceira pessoa, para determiná-lo a praticar, omitir ou retardar ato de ofício relacionado a transação comercial internacional: (Incluído pela Lei nº 10467, de 11.6.2002) Pena – reclusão, de 1 (um) a 8 (oito) anos, e multa. (Incluído pela Lei nº 10467, de 11.6.2002) Parágrafo único. A pena é aumentada de 1/3 (um terço), se, em razão da vantagem ou promessa, o funcionário público estrangeiro retarda ou omite o ato de ofício, ou o pratica infringindo dever funcional. (Incluído pela Lei nº 10467, de 11.6.2002)"
+                android:text="Art. 337-B. Prometer, oferecer ou dar, direta ou indiretamente, vantagem indevida a funcionário público estrangeiro, ou a terceira pessoa, para determiná-lo a praticar, omitir ou retardar ato de ofício relacionado a transação comercial internacional: (Incluído pela Lei nº 10467, de 11.6.2002)
+\nPena – reclusão, de 1 (um) a 8 (oito) anos, e multa. (Incluído pela Lei nº 10467, de 11.6.2002)
+\nParágrafo único. A pena é aumentada de 1/3 (um terço), se, em razão da vantagem ou promessa, o funcionário público estrangeiro retarda ou omite o ato de ofício, ou o pratica infringindo dever funcional. (Incluído pela Lei nº 10467, de 11.6.2002)
+"
                 android:textSize="14sp"
                 android:gravity="left"
                 android:textColor="@color/material_drawer_primary_dark"

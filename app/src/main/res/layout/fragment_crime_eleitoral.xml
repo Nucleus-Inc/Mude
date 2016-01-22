@@ -55,9 +55,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Art. 299. Dar, oferecer, prometer, solicitar ou receber, para si ou para outrem, dinheiro, dádiva, ou qualquer outra vantagem, para obter ou dar voto e para conseguir ou prometer abstenção, ainda que a oferta não seja aceita:
-\nPena - reclusão até quatro anos e pagamento de cinco a quinze dias-multa."
+            \nPena - reclusão até quatro anos e pagamento de cinco a quinze dias-multa.
+            "
                 android:textSize="14sp"
-                android:gravity="center"
+                android:gravity="left"
                 android:textColor="@color/material_drawer_primary_dark"
                 android:layout_below="@+id/mude_id_title_2"
                 android:layout_marginTop="10dp"

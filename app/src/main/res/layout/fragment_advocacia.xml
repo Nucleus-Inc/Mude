@@ -54,7 +54,11 @@
                 android:id="@+id/mude_id_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Art. 321 - Patrocinar, direta ou indiretamente, interesse privado perante a administração pública, valendo-se da qualidade de funcionário: Pena - detenção, de um a três meses, ou multa. Parágrafo único - Se o interesse é ilegítimo: Pena - detenção, de três meses a um ano, além da multa."
+                android:text="Art. 321 - Patrocinar, direta ou indiretamente, interesse privado perante a administração pública, valendo-se da qualidade de funcionário:
+\nPena - detenção, de um a três meses, ou multa.
+\nParágrafo único - Se o interesse é ilegítimo:
+\nPena - detenção, de três meses a um ano, além da multa.
+"
                 android:textSize="14sp"
                 android:gravity="left"
                 android:textColor="@color/material_drawer_primary_dark"
