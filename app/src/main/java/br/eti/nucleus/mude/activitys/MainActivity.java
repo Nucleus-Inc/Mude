@@ -165,8 +165,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 } else{
                     if (Sanguessuga.fullscreen) {
                         Sanguessuga.player.setFullscreen(false);
-                    } else
+                    } else {
+                        /*if(TenMeasures.fullscreen){
+                            TenMeasures.player.setFullscreen(false);
+                        }else*/
                         super.onBackPressed();
+                    }
                 }
 
             }

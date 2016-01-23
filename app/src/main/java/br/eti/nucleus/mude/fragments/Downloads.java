@@ -132,52 +132,52 @@ public class Downloads extends Fragment implements View.OnClickListener{
 
         switch (v.getId()){
             case R.id.download_id_app_layout:
-                url = "http://combateacorrupcao.mpf.mp.br/10-medidas/docs/modelo_carta_apoio.pdf";
+                url = "Deseja efetuar o download da carta de apoio?";
                 break;
             case R.id.download_id_app_layout_1:
-                url = "http://combateacorrupcao.mpf.mp.br/10-medidas/docs/medidas-anticorrupcao_versao-2015-06-25.pdf";
+                url = "Deseja efetuar o download das 10 medidas contra a corrupção?";
                 break;
             case R.id.download_id_app_layout_2:
-                url = "http://combateacorrupcao.mpf.mp.br/10-medidas/docs/sumario_executivo.pdf";
+                url = "Deseja efetuar o download do sumário executivo?";
                 break;
             case R.id.download_id_app_layout_3:
-                url = "http://www.combateacorrupcao.mpf.mp.br/10-medidas/docs/lista-apoiadores-por-uf.pdf";
+                url = "Deseja efetuar o download da lista de apoiadores?";
                 break;
             case R.id.download_id_app_layout_4:
-                url = "http://combateacorrupcao.mpf.mp.br/10-medidas/docs/Ficha-de-Assinatura_.pdf";
+                url = "Deseja efetuar o download da ficha de assinatura?";
                 break;
             case R.id.download_1_id_app_layout:
-                url = "http://combateacorrupcao.mpf.mp.br/10-medidas/docs/resumo-medidas-frente-verso.pdf";
+                url = "Deseja efetuar o download do resumo das medidas?";
                 break;
             case R.id.download_1_id_app_layout_1:
-                url = "http://www.combateacorrupcao.mpf.mp.br/10-medidas/docs/001_15_10_Medidas_Corrupcao_Banner_LONA_sem_marca_apoio.pdf";
+                url = "Deseja efetuar o download do banner de lona?";
                 break;
             case R.id.download_1_id_app_layout_2:
-                url = "http://combateacorrupcao.mpf.mp.br/10-medidas/docs/001_15_10_Medidas_Banner_Online_600x120_APOIE.png";
+                url = "Deseja efetuar o download do banner de internet?";
                 break;
             case R.id.download_1_id_app_layout_3:
-                url = "http://combateacorrupcao.mpf.mp.br/10-medidas/docs/001_15_Prisma_Mesa_10_Medidas.pdf";
+                url = "Deseja efetuar o download do prisma de mesa?";
                 break;
             case R.id.download_1_id_app_layout_4:
-                url = "http://combateacorrupcao.mpf.mp.br/10-medidas/docs/filipeta-de-apoio-10-medidas.pdf";
+                url = "Deseja efetuar o download da filipeta de apoio?";
                 break;
             case R.id.download_1_id_app_layout_5:
-                url = "http://combateacorrupcao.mpf.mp.br/10-medidas/docs/001_15_10_medidas_Cartaz_Apoio_A4.pdf";
+                url = "Deseja efetuar o download do cartaz de apoio?";
                 break;
             case R.id.download_1_id_app_layout_6:
-                url = "http://www.combateacorrupcao.mpf.mp.br/10-medidas/docs/001_10_medidas_Outdoor.pdf";
+                url = "Deseja efetuar o download do outdoor?";
                 break;
             case R.id.download_1_id_app_layout_7:
-                url = "http://www.combateacorrupcao.mpf.mp.br/10-medidas/docs/Broadside-10-Medidas-Internet_new.pdf";
+                url = "Deseja efetuar o download do broadside?";
                 break;
             case R.id.download_1_id_app_layout_8:
-                url = "http://www.combateacorrupcao.mpf.mp.br/10-medidas/docs/001_15_10_Medidas_Camiseta.pdf";
+                url = "Deseja efetuar o download da camiseta?";
                 break;
         }
 
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
+        DownloadConfirmation downloadConfirmation = DownloadConfirmation.newInstance(v.getId(),url);
+
+        downloadConfirmation.show(getFragmentManager(),url);
 
     }
 }

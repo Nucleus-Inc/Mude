@@ -49,7 +49,7 @@ public class CarlinhosCachoeira extends Fragment{
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-        outState.putInt(TIME_PAUSED,player.getCurrentTimeMillis());
+        outState.putInt(TIME_PAUSED, player.getCurrentTimeMillis());
         super.onSaveInstanceState(outState);
     }
 
