@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_consulta_titulo"
+        android:title="Consultar Título de Eleitor"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_unidades_mpf"
+        android:title="Unidades do MPF"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menu_pontos_coleta"
+        android:title="Pontos de Coleta"
+        app:showAsAction="never"
+        />
 
 </menu>
