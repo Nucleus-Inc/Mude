@@ -47,7 +47,7 @@
                 android:id="@+id/bancosantos_id_subtitle_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="orgina de Freitas era advogada e procuradora previdenciária. Ela foi condenada em 1992 por organizar esquema criminoso que fraudou, entre o final da década de 1980 e início da de 1990, o Instituto Nacional do Seguro Social (INSS). Ao todo, estima-se que foram desviados valores da ordem de R$ 500 milhões. O caso ficou conhecido como máfia da previdência.
+                android:text="Jorgina de Freitas era advogada e procuradora previdenciária. Ela foi condenada em 1992 por organizar esquema criminoso que fraudou, entre o final da década de 1980 e início da de 1990, o Instituto Nacional do Seguro Social (INSS). Ao todo, estima-se que foram desviados valores da ordem de R$ 500 milhões. O caso ficou conhecido como máfia da previdência.
                 \nA fraude consistia em desviar mais de 50% de toda a arrecadação do INSS à época e repassá-la ao segurado Assis dos Santos. A indenização foi paga em fevereiro de 1991, sendo que Assis havia falecido em maio de 1986 e o montante permaneceu sob a posse de Jorgina. Havia grandes distorções nos valores e foi comprovado o envolvimento de outras pessoas no esquema."
                 android:textSize="14sp"
                 android:gravity="left"

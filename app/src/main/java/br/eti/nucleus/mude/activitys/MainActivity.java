@@ -1,6 +1,5 @@
 package br.eti.nucleus.mude.activitys;
 
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.design.widget.NavigationView;
@@ -165,11 +164,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 } else{
                     if (Sanguessuga.fullscreen) {
                         Sanguessuga.player.setFullscreen(false);
-                    } else {
+                    } else{
                         /*if(TenMeasures.fullscreen){
                             TenMeasures.player.setFullscreen(false);
                         }else*/
-                        super.onBackPressed();
+                            super.onBackPressed();
                     }
                 }
 

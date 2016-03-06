@@ -86,6 +86,9 @@ public class DownloadConfirmation extends DialogFragment{
                             case R.id.download_1_id_app_layout_8:
                                 url = "http://www.combateacorrupcao.mpf.mp.br/10-medidas/docs/001_15_10_Medidas_Camiseta.pdf";
                                 break;
+                            case R.id.ten_measure_download:
+                                url = "http://combateacorrupcao.mpf.mp.br/10-medidas/docs/Ficha-de-Assinatura_.pdf";
+                                break;
                         }
 
                         Intent i = new Intent(Intent.ACTION_VIEW);

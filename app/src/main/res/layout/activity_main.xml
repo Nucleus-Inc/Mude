@@ -6,7 +6,5 @@
     tools:context=".MainActivity"
     android:background="@color/material_drawer_background"
     >
-
     <include layout="@layout/navigator_drawer_layout"/>
-
 </LinearLayout>

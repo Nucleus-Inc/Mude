@@ -34,7 +34,18 @@
             android:orientation="vertical"
             >
             <include layout="@layout/toolbar_layout"/>
-
+<!--
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                android:background="@color/material_drawer_primary"
+                app:theme="@style/ToolbarTheme"
+                app:popupTheme="@style/PopupTheme"
+                />
+-->
             <FrameLayout
                 android:id="@+id/fragment_container"
                 android:layout_width="match_parent"
